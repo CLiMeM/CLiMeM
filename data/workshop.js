@@ -103,10 +103,12 @@
       linkHref: 'https://conferences.miccai.org/2026/en/default.asp'
     },
     faq: [
-      { q: 'What is the workshop format?', a: 'Half-day workshop with invited talks and contributed oral/poster presentations. Exact format will follow MICCAI 2026 workshop guidelines.' },
-      { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026.' },
-      { q: 'Will workshop papers be published?', a: 'We plan to include accepted papers in the MICCAI 2026 Workshop Proceedings. Final publication venue will be confirmed.' },
-      { q: 'Can I submit work also submitted elsewhere?', a: 'Submissions must be original and not simultaneously under review at another venue. Dual submission policies follow MICCAI guidelines.' }
+      { q: 'What is the workshop format?', a: 'CLiMeM is a half-day workshop with invited talks and contributed oral and poster presentations. The exact schedule and format will follow MICCAI 2026 workshop guidelines. Check the Workshop Program page for updates.' },
+      { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
+      { q: 'Will workshop papers be published?', a: 'Yes. Accepted papers will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS), in the same series as other MICCAI satellite events.' },
+      { q: 'Can I submit work also submitted elsewhere?', a: 'No. Submissions must be original. No paper of substantially similar content should be under peer review or have been accepted for publication elsewhere (conference or journal). Dual submission policies follow MICCAI guidelines.' },
+      { q: 'What is the page limit and format for submissions?', a: 'Papers must follow LNCS style and be up to 8 + 2 pages (same as MICCAI 2025 format). Submissions exceeding the page limit will be rejected without review. Only PDF format is accepted. See the Submission Guidelines page for details.' },
+      { q: 'Is supplemental material allowed?', a: 'No. Following MICCAI 2026 guidelines for main paper submission, supplemental material is not allowed for CLiMeM.' }
     ],
     contact: {
       email: 'climemworkshop@gmail.com',

@@ -61,7 +61,8 @@
       if (el && faq.length) {
         el.innerHTML = faq.map(function (item, i) {
           var id = 'faq-' + i;
-          return '<li class="faq-item"><button type="button" class="faq-q" id="' + id + '" aria-expanded="false" aria-controls="' + id + '-a"><span>' + item.q + '</span><span class="icon" aria-hidden="true">&#9660;</span></button><div class="faq-a" id="' + id + '-a" hidden><div class="faq-a-inner">' + item.a + '</div></div></li>';
+          var openFirst = i === 0;
+          return '<li class="faq-item' + (openFirst ? ' open' : '') + '"><button type="button" class="faq-q" id="' + id + '" aria-expanded="' + openFirst + '" aria-controls="' + id + '-a"><span>' + item.q + '</span><span class="icon" aria-hidden="true">&#9660;</span></button><div class="faq-a" id="' + id + '-a"' + (openFirst ? '' : ' hidden') + '><div class="faq-a-inner">' + item.a + '</div></div></li>';
         }).join('');
       }
       var contact = w.contact || {};
