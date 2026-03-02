@@ -105,7 +105,7 @@
     proceedingsPageIntro: 'All proceedings will be listed below. This is the first edition of CLiMeM; once the workshop has taken place, accepted papers will appear here.',
     galleryPlaceholderLabel: 'CLiMeM | MICCAI 2026',
     faq: [
-      { q: 'What is the workshop format?', a: 'CLiMeM is a half-day workshop with invited talks and contributed oral and poster presentations. The exact schedule and format will follow MICCAI 2026 workshop guidelines. Check the Workshop Program page for updates.' },
+      { q: 'What is the workshop format?', a: 'TBA' },
       { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
       { q: 'Will workshop papers be published?', a: 'Yes. Accepted papers will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS), in the same series as other MICCAI satellite events.' },
       { q: 'Can I submit work also submitted elsewhere?', a: 'No. Submissions must be original. No paper of substantially similar content should be under peer review or have been accepted for publication elsewhere (conference or journal). Dual submission policies follow MICCAI guidelines.' },
