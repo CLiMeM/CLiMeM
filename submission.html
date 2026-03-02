@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Submission</title>
+  <title id="page-title">Call for Papers</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,25 +26,10 @@
 
   <main id="main-content">
     <div class="container">
-      <h1 class="page-title" id="submission-heading"></h1>
-      <p class="page-lead" id="submission-intro"></p>
-
-      <section class="section" aria-labelledby="guidelines-title">
-        <h2 id="guidelines-title">Guidelines</h2>
-        <ul id="submission-guidelines"></ul>
-        <h3 id="formatting-title">Formatting rules</h3>
-        <ul id="submission-formatting"></ul>
-      </section>
-
-      <section class="section" aria-labelledby="review-title">
-        <h2 id="review-title">Review process</h2>
-        <p id="submission-review"></p>
-      </section>
-
-      <section class="section" aria-labelledby="proceedings-title">
-        <h2 id="proceedings-title">Proceedings</h2>
-        <p id="submission-proceedings"></p>
-      </section>
+      <h1 class="page-title" id="cfp-title"></h1>
+      <div id="cfp-intro"></div>
+      <p class="cfp-topics-lead" id="cfp-topics-lead"></p>
+      <div id="cfp-topic-groups"></div>
     </div>
   </main>
 
@@ -61,20 +46,23 @@
     (function () {
       if (typeof window.workshop === 'undefined') return;
       var w = window.workshop;
-      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Submission';
-      var heading = document.getElementById('submission-heading'); if (heading) heading.textContent = 'Submission';
-      var intro = document.getElementById('submission-intro'); if (intro) intro.textContent = w.submissionIntro || '';
-      var gl = w.submissionGuidelines || {};
-      var bullets = document.getElementById('submission-guidelines');
-      if (bullets && gl.bullets && gl.bullets.length) {
-        bullets.innerHTML = gl.bullets.map(function (g) { return '<li>' + g + '</li>'; }).join('');
+      var cfp = w.callForPapers || {};
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — ' + (cfp.title || 'Call for Papers');
+      var titleEl = document.getElementById('cfp-title');
+      if (titleEl) titleEl.textContent = cfp.title || 'Call for Papers';
+      var introEl = document.getElementById('cfp-intro');
+      if (introEl && cfp.intro && cfp.intro.length) {
+        introEl.innerHTML = cfp.intro.map(function (p) { return '<p class="page-lead">' + p + '</p>'; }).join('');
       }
-      var fmt = document.getElementById('submission-formatting');
-      if (fmt && gl.formattingRulesPlaceholders && gl.formattingRulesPlaceholders.length) {
-        fmt.innerHTML = gl.formattingRulesPlaceholders.map(function (r) { return '<li>' + r + '</li>'; }).join('');
+      var leadEl = document.getElementById('cfp-topics-lead');
+      if (leadEl) leadEl.textContent = cfp.topicsLead || 'Topics include, but are not limited to:';
+      var groupsEl = document.getElementById('cfp-topic-groups');
+      if (groupsEl && cfp.topicGroups && cfp.topicGroups.length) {
+        groupsEl.innerHTML = cfp.topicGroups.map(function (g) {
+          var items = (g.items || []).map(function (i) { return '<li>' + i + '</li>'; }).join('');
+          return '<section class="section"><h2 class="section-title">' + (g.title || '') + '</h2><ul class="cfp-topic-list">' + items + '</ul></section>';
+        }).join('');
       }
-      var rev = document.getElementById('submission-review'); if (rev) rev.textContent = w.reviewProcess || '';
-      var proc = document.getElementById('submission-proceedings'); if (proc) proc.textContent = w.proceedings || '';
     })();
   </script>
 </body>

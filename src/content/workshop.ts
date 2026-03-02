@@ -47,6 +47,18 @@ export interface SubmissionGuidelines {
   formattingRulesPlaceholders: string[];
 }
 
+export interface CallForPapersTopicGroup {
+  title: string;
+  items: string[];
+}
+
+export interface CallForPapers {
+  title: string;
+  intro: string[];
+  topicsLead: string;
+  topicGroups: CallForPapersTopicGroup[];
+}
+
 export interface Award {
   name: string;
   description: string;
@@ -95,6 +107,7 @@ export interface Workshop {
   submissionIntro: string;
   reviewProcess: string;
   proceedings: string;
+  callForPapers: CallForPapers;
   awards: Award[];
   venue: VenueInfo;
   faq: FaqItem[];
@@ -192,6 +205,56 @@ export const workshop: Workshop = {
     ]
   },
   submissionIntro: 'We invite short and full papers on continual learning, multimodal learning, and medical vision. Submissions will be peer-reviewed.',
+  callForPapers: {
+    title: 'Call for Papers',
+    intro: [
+      'The CLiMeM Workshop on Continual Learning in Medical Multimodal-Vision, held in conjunction with MICCAI 2026, aims to provide a dedicated forum for discussing methodological advances and practical challenges in developing adaptive medical AI systems capable of learning continuously from evolving clinical environments.',
+      'Clinical practice is inherently dynamic. Patient populations shift, imaging protocols evolve, hardware systems change, and diagnostic workflows continuously adapt. In contrast, most medical AI models are trained under static assumptions and remain fixed after deployment, leading to performance degradation under distribution shifts and changing clinical conditions.',
+      'CLiMeM focuses on continual, adaptive, and clinician-integrated learning paradigms that enable medical AI systems to evolve safely over time while maintaining robustness, reliability, and clinical relevance.',
+      'We invite original research contributions addressing continual learning, multimodal medical AI, and adaptive clinical intelligence. Submissions may include methodological innovations, system designs, benchmark studies, or clinical deployment experiences.'
+    ],
+    topicsLead: 'Topics include, but are not limited to:',
+    topicGroups: [
+      {
+        title: '1. Continual and Lifelong Learning',
+        items: [
+          'Lifelong, continual, incremental, and online learning methods',
+          'Sequential and multitask learning in medical settings',
+          'Benchmark datasets, evaluation protocols, and metrics',
+          'Catastrophic forgetting mitigation strategies'
+        ]
+      },
+      {
+        title: '2. Clinician-in-the-Loop Learning',
+        items: [
+          'Human–AI collaboration and interactive supervision',
+          'Reinforcement learning for clinical decision support',
+          'Preference learning from clinician feedback',
+          'Implicit feedback signals (e.g., gaze, interaction logs)',
+          'Annotation efficiency and active learning',
+          'Trustworthy and interpretable clinical AI systems'
+        ]
+      },
+      {
+        title: '3. Adaptive and Context-Aware Inference',
+        items: [
+          'Test-time adaptation and online domain generalization',
+          'Memory- and retrieval-augmented models',
+          'Context-aware and causal modeling',
+          'Resource-constrained and real-time adaptation'
+        ]
+      },
+      {
+        title: '4. Clinical Workflow Integration and Deployment',
+        items: [
+          'Integration with PACS, EHR, RIS, and imaging workstations',
+          'Deployment using platforms such as MONAI Label, OHIF, and 3D Slicer',
+          'Continual learning infrastructure and model governance',
+          'User-centred clinical system design'
+        ]
+      }
+    ]
+  },
   reviewProcess: 'Each submission will receive at least two reviews. Decisions are made by the organizing committee based on originality, relevance, and clarity. We aim for constructive feedback to support authors.',
   proceedings: 'Accepted papers are planned to be published in the MICCAI 2026 Workshop Proceedings (details to be confirmed with MICCAI).',
   awards: [
@@ -215,11 +278,10 @@ export const workshop: Workshop = {
     note: 'For questions about the workshop, submission, or program, please contact the organizers.'
   },
   nav: [
-    { label: 'Home', href: 'index.html' },
-    { label: 'About', href: 'about.html' },
-    { label: 'Program', href: 'program.html' },
+    { label: 'Call for Paper', href: 'submission.html' },
+    { label: 'Submission Guidelines', href: 'submission-guidelines.html' },
+    { label: 'Workshop Program', href: 'program.html' },
     { label: 'Organizers', href: 'organizers.html' },
-    { label: 'Submission', href: 'submission.html' },
     { label: 'Awards', href: 'awards.html' },
     { label: 'Venue', href: 'venue.html' },
     { label: 'News', href: 'news.html' },

@@ -631,6 +631,30 @@ main {
   margin-left: 0.5rem;
 }
 
+.cfp-topics-lead {
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: var(--gray-900);
+}
+
+.cfp-topic-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cfp-topic-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cfp-topic-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--purple-500);
+}
+
 /* Awards list */
 .awards-list {
   list-style: none;
