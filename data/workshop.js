@@ -99,7 +99,7 @@
       { q: 'Can I submit work also submitted elsewhere?', a: 'Submissions must be original and not simultaneously under review at another venue. Dual submission policies follow MICCAI guidelines.' }
     ],
     contact: {
-      email: 'climem-workshop@example.org',
+      email: 'climemworkshop@gmail.com',
       note: 'For questions about the workshop, submission, or program, please contact the organizers.'
     },
     nav: [
