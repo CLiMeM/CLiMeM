@@ -25,7 +25,7 @@
 
   function renderHeader(container) {
     if (!container) return;
-    container.innerHTML = '<a href="index.html" class="site-logo">' + escapeHtml(name) + ' ' + escapeHtml(year) + '</a>';
+    container.innerHTML = '<a href="index.html" class="site-logo"><img src="images/climem_logo.png" alt="" class="site-logo-img"><span class="site-logo-text">' + escapeHtml(name) + ' ' + escapeHtml(year) + '</span></a>';
   }
 
   function renderNav(container) {
