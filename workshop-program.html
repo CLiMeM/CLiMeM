@@ -27,18 +27,7 @@
   <main id="main-content">
     <div class="container">
       <h1 class="page-title" id="program-heading"></h1>
-      <p class="page-lead" id="program-intro"></p>
-      <p class="page-lead" style="margin-bottom: 1.5rem;" id="program-tz"></p>
-
-      <section class="section" aria-labelledby="schedule-title">
-        <h2 id="schedule-title">Tentative schedule (half-day)</h2>
-        <ul class="schedule-list" id="schedule-list"></ul>
-      </section>
-
-      <section class="section" aria-labelledby="speakers-title">
-        <h2 id="speakers-title">Invited speakers</h2>
-        <ul class="organizers-list" id="invited-speakers"></ul>
-      </section>
+      <p class="page-lead" id="program-intro">TBA</p>
     </div>
   </main>
 
@@ -57,23 +46,7 @@
       var w = window.workshop;
       document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Workshop Program';
       var heading = document.getElementById('program-heading'); if (heading) heading.textContent = 'Workshop Program';
-      var intro = document.getElementById('program-intro'); if (intro) intro.textContent = w.programIntro || '';
-      var tz = document.getElementById('program-tz'); if (tz) tz.textContent = w.programTimezone || '';
-      var list = document.getElementById('schedule-list');
-      if (list && w.tentativeSchedule && w.tentativeSchedule.length) {
-        list.innerHTML = w.tentativeSchedule.map(function (s) {
-          var cls = s.type === 'break' ? ' type-break' : '';
-          var speaker = s.speaker ? ' — ' + s.speaker : '';
-          return '<li><span class="time">' + (s.time || '') + '</span><span class="' + (s.type || '') + cls + '">' + (s.title || '') + speaker + '</span></li>';
-        }).join('');
-      }
-      var speakers = document.getElementById('invited-speakers');
-      var inv = w.invitedSpeakers || [];
-      if (speakers && inv.length) {
-        speakers.innerHTML = inv.map(function (x) {
-          return '<li><span class="name">' + (x.name || '') + '</span><br><span class="affiliation">' + (x.affiliation || '') + '</span></li>';
-        }).join('');
-      }
+      var intro = document.getElementById('program-intro'); if (intro) intro.textContent = 'TBA';
     })();
   </script>
 </body>
