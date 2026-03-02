@@ -57,7 +57,8 @@
           var items = (grp.organizers || []).map(function (o) {
             var aff = o.affiliation || '';
             var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
-            return '<li><span class="name">' + namePart + '</span><br><span class="affiliation">' + aff + '</span></li>';
+            var photoHtml = o.photo ? '<div class="organizer-photo"><img src="images/' + o.photo + '" alt="" onerror="this.style.display=\'none\'"></div>' : '<div class="organizer-photo"></div>';
+            return '<li class="organizer-card"><div class="organizer-photo-wrap">' + photoHtml + '</div><div class="organizer-info"><span class="name">' + namePart + '</span><br><span class="affiliation">' + aff + '</span></div></li>';
           }).join('');
           return '<li class="organizers-group ' + gridClass + '"><h2 class="section-title">' + (grp.title || '') + '</h2><ul class="organizers-list organizers-cards">' + items + '</ul></li>';
         }).join('');
@@ -67,7 +68,8 @@
           el.innerHTML = list.map(function (o) {
             var aff = o.affiliation || '';
             var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
-            return '<li><span class="name">' + namePart + '</span><br><span class="affiliation">' + aff + '</span></li>';
+            var photoHtml = o.photo ? '<div class="organizer-photo"><img src="images/' + o.photo + '" alt="" onerror="this.style.display=\'none\'"></div>' : '<div class="organizer-photo"></div>';
+            return '<li class="organizer-card"><div class="organizer-photo-wrap">' + photoHtml + '</div><div class="organizer-info"><span class="name">' + namePart + '</span><br><span class="affiliation">' + aff + '</span></div></li>';
           }).join('');
         }
       }
