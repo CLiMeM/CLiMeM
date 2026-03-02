@@ -28,6 +28,12 @@
     <div class="container">
       <h1 class="page-title" id="cfp-title"></h1>
       <div id="cfp-intro"></div>
+
+      <section class="section" aria-labelledby="cfp-dates-title">
+        <h2 id="cfp-dates-title">Important Dates</h2>
+        <ul class="dates-list" id="cfp-dates-list"></ul>
+      </section>
+
       <p class="cfp-topics-lead" id="cfp-topics-lead"></p>
       <div id="cfp-topic-groups"></div>
     </div>
@@ -53,6 +59,13 @@
       var introEl = document.getElementById('cfp-intro');
       if (introEl && cfp.intro && cfp.intro.length) {
         introEl.innerHTML = cfp.intro.map(function (p) { return '<p class="page-lead">' + p + '</p>'; }).join('');
+      }
+      var dates = w.importantDates || [];
+      var datesEl = document.getElementById('cfp-dates-list');
+      if (datesEl && dates.length) {
+        datesEl.innerHTML = dates.map(function (x) {
+          return '<li><span class="date">' + (x.date || 'TBA') + '</span> ' + (x.label || '') + '</li>';
+        }).join('');
       }
       var leadEl = document.getElementById('cfp-topics-lead');
       if (leadEl) leadEl.textContent = cfp.topicsLead || 'Topics include, but are not limited to:';
