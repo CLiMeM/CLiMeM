@@ -221,6 +221,13 @@ main {
   max-width: 50ch;
 }
 
+/* Call for Paper: full-width text within container */
+#cfp-intro .page-lead {
+  max-width: none;
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+}
+
 /* Hero (home) */
 .hero {
   padding: 4rem 0 3rem;
