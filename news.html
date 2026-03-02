@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">News</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="news">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="container">
+      <h1 class="page-title" id="news-heading"></h1>
+      <p class="page-lead" id="news-lead"></p>
+      <ul class="news-list" id="news-list"></ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — News';
+      var heading = document.getElementById('news-heading'); if (heading) heading.textContent = 'News';
+      var lead = document.getElementById('news-lead'); if (lead) lead.textContent = 'Updates and announcements for the workshop.';
+      var listEl = document.getElementById('news-list');
+      var items = (w.news || []).slice().sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+      if (!items.length) {
+        listEl.innerHTML = '<li>No news items yet.</li>';
+      } else {
+        listEl.innerHTML = items.map(function (n) {
+          var d = (n.date || '').replace(/-/g, '.');
+          var pin = n.pinned ? ' <span class="news-pinned">Pinned</span>' : '';
+          return '<li><span class="news-date">' + d + pin + '</span><div class="news-title">' + (n.title || '') + '</div><div class="news-body">' + (n.blurb || '') + '</div></li>';
+        }).join('');
+      }
+    })();
+  </script>
+</body>
+</html>

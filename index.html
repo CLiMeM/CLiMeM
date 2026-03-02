@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">CLiMeM 2026</title>
+  <meta name="description" id="meta-description" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="index">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title" id="hero-title"></h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+        <p class="hero-desc" id="hero-desc"></p>
+        <div class="hero-cta" id="hero-cta"></div>
+      </div>
+    </section>
+
+    <section class="section" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <h2 class="section-title" id="news-title">News</h2>
+        <ul class="news-preview" id="news-preview"></ul>
+        <p><a href="news.html">All news &rarr;</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="dates" aria-labelledby="dates-title">
+      <div class="container">
+        <h2 class="section-title" id="dates-title">Important dates</h2>
+        <p class="page-lead" style="margin-bottom: 1rem;">All times AOE unless noted.</p>
+        <ul class="dates-list" id="dates-list"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="quick-links" aria-labelledby="links-title">
+      <div class="container">
+        <h2 class="section-title" id="links-title">Quick links</h2>
+        <ul class="quick-links" id="quick-links"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — ' + (w.subtitle || '');
+      var meta = document.getElementById('meta-description'); if (meta) meta.setAttribute('content', w.description && w.description.short ? w.description.short : '');
+      var hero = w.hero;
+      if (hero) {
+        var t = document.getElementById('hero-title'); if (t) t.textContent = hero.title;
+        var s = document.getElementById('hero-subtitle'); if (s) s.textContent = hero.subtitle;
+        var d = document.getElementById('hero-desc'); if (d) d.textContent = hero.description;
+        var cta = document.getElementById('hero-cta');
+        if (cta && hero.ctaPrimary && hero.ctaSecondary) {
+          cta.innerHTML = '<a href="' + (hero.ctaPrimary.href || '') + '" class="btn btn-primary">' + (hero.ctaPrimary.label || '') + '</a><a href="' + (hero.ctaSecondary.href || '') + '" class="btn btn-secondary">' + (hero.ctaSecondary.label || '') + '</a>';
+        }
+      }
+      var dates = w.importantDates || [];
+      var datesEl = document.getElementById('dates-list');
+      if (datesEl) {
+        datesEl.innerHTML = dates.map(function (x) {
+          return '<li><span class="date">' + (x.date || 'TBA') + '</span> ' + (x.label || '') + '</li>';
+        }).join('');
+      }
+      var links = w.quickLinks || [];
+      var linksEl = document.getElementById('quick-links');
+      if (linksEl) {
+        linksEl.innerHTML = links.map(function (x) {
+          return '<li><a href="' + (x.href || '#') + '">' + (x.label || '') + '</a></li>';
+        }).join('');
+      }
+      var news = (w.news || []).slice().sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); }).slice(0, 3);
+      var newsEl = document.getElementById('news-preview');
+      if (newsEl) {
+        newsEl.innerHTML = news.map(function (n) {
+          var d = (n.date || '').replace(/-/g, '.');
+          return '<li><span class="news-date">' + d + '</span><div class="news-title">' + (n.title || '') + '</div><div class="news-body">' + (n.blurb || '') + '</div></li>';
+        }).join('');
+      }
+    })();
+  </script>
+</body>
+</html>

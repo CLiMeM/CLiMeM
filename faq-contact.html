@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">FAQ & Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="faq-contact">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="container">
+      <h1 class="page-title" id="faq-heading"></h1>
+
+      <section class="section" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <ul class="faq-list" id="faq-list"></ul>
+      </section>
+
+      <section class="section" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p id="contact-note"></p>
+        <div class="contact-block" id="contact-block"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — FAQ & Contact';
+      var heading = document.getElementById('faq-heading'); if (heading) heading.textContent = 'FAQ & Contact';
+      var faq = w.faq || [];
+      var el = document.getElementById('faq-list');
+      if (el && faq.length) {
+        el.innerHTML = faq.map(function (item, i) {
+          var id = 'faq-' + i;
+          return '<li class="faq-item"><button type="button" class="faq-q" id="' + id + '" aria-expanded="false" aria-controls="' + id + '-a"><span>' + item.q + '</span><span class="icon" aria-hidden="true">&#9660;</span></button><div class="faq-a" id="' + id + '-a" hidden><div class="faq-a-inner">' + item.a + '</div></div></li>';
+        }).join('');
+      }
+      var contact = w.contact || {};
+      var note = document.getElementById('contact-note'); if (note) note.textContent = contact.note || '';
+      var block = document.getElementById('contact-block');
+      if (block && contact.email) {
+        block.innerHTML = 'Email: <a href="mailto:' + contact.email + '">' + contact.email + '</a>';
+      }
+      if (typeof window.initFaq === 'function') window.initFaq();
+    })();
+  </script>
+</body>
+</html>

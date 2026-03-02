@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Organizers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="organizers">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="container">
+      <h1 class="page-title" id="organizers-heading"></h1>
+      <p class="page-lead" id="organizers-lead"></p>
+      <ul class="organizers-list" id="organizers-list"></ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Organizers';
+      var heading = document.getElementById('organizers-heading'); if (heading) heading.textContent = 'Organizers';
+      var lead = document.getElementById('organizers-lead'); if (lead) lead.textContent = 'Organizing team for the ' + (w.edition || '') + ' of ' + (w.workshopName || '') + '.';
+      var list = w.organizers || [];
+      var el = document.getElementById('organizers-list');
+      if (el && list.length) {
+        el.innerHTML = list.map(function (o) {
+          var aff = [o.affiliation, o.country].filter(Boolean).join(', ');
+          var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
+          return '<li><span class="name">' + namePart + '</span><br><span class="affiliation">' + (o.title || '') + (aff ? ' — ' + aff : '') + '</span></li>';
+        }).join('');
+      }
+    })();
+  </script>
+</body>
+</html>

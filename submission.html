@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Submission</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="submission">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="container">
+      <h1 class="page-title" id="submission-heading"></h1>
+      <p class="page-lead" id="submission-intro"></p>
+
+      <section class="section" aria-labelledby="guidelines-title">
+        <h2 id="guidelines-title">Guidelines</h2>
+        <ul id="submission-guidelines"></ul>
+        <h3 id="formatting-title">Formatting rules</h3>
+        <ul id="submission-formatting"></ul>
+      </section>
+
+      <section class="section" aria-labelledby="review-title">
+        <h2 id="review-title">Review process</h2>
+        <p id="submission-review"></p>
+      </section>
+
+      <section class="section" aria-labelledby="proceedings-title">
+        <h2 id="proceedings-title">Proceedings</h2>
+        <p id="submission-proceedings"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Submission';
+      var heading = document.getElementById('submission-heading'); if (heading) heading.textContent = 'Submission';
+      var intro = document.getElementById('submission-intro'); if (intro) intro.textContent = w.submissionIntro || '';
+      var gl = w.submissionGuidelines || {};
+      var bullets = document.getElementById('submission-guidelines');
+      if (bullets && gl.bullets && gl.bullets.length) {
+        bullets.innerHTML = gl.bullets.map(function (g) { return '<li>' + g + '</li>'; }).join('');
+      }
+      var fmt = document.getElementById('submission-formatting');
+      if (fmt && gl.formattingRulesPlaceholders && gl.formattingRulesPlaceholders.length) {
+        fmt.innerHTML = gl.formattingRulesPlaceholders.map(function (r) { return '<li>' + r + '</li>'; }).join('');
+      }
+      var rev = document.getElementById('submission-review'); if (rev) rev.textContent = w.reviewProcess || '';
+      var proc = document.getElementById('submission-proceedings'); if (proc) proc.textContent = w.proceedings || '';
+    })();
+  </script>
+</body>
+</html>

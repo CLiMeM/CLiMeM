@@ -1,0 +1,12 @@
+{
+  "name": "climem-miccai",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/workshop-browser.ts --bundle --format=iife --outfile=data/workshop.js",
+    "build:watch": "esbuild src/workshop-browser.ts --bundle --format=iife --outfile=data/workshop.js --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0"
+  }
+}

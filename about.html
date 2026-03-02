@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">About</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="container">
+      <h1 class="page-title" id="about-heading"></h1>
+      <p class="page-lead" id="about-theme"></p>
+
+      <section class="section" aria-labelledby="motivation-title">
+        <h2 id="motivation-title">Motivation</h2>
+        <p id="about-motivation"></p>
+      </section>
+
+      <section class="section" aria-labelledby="topics-title">
+        <h2 id="topics-title">Topics</h2>
+        <div id="about-topics"></div>
+      </section>
+
+      <section class="section" aria-labelledby="keywords-title">
+        <h2 id="keywords-title">Keywords</h2>
+        <p id="about-keywords" class="page-lead"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — About';
+      var desc = w.description || {};
+      var theme = document.getElementById('about-theme'); if (theme) theme.textContent = desc.theme || desc.short || '';
+      var mot = document.getElementById('about-motivation'); if (mot) mot.textContent = desc.motivation || '';
+      var kw = document.getElementById('about-keywords'); if (kw) kw.textContent = desc.keywords || '';
+      var heading = document.getElementById('about-heading'); if (heading) heading.textContent = 'About the workshop';
+      var topicsEl = document.getElementById('about-topics');
+      if (topicsEl && w.topics && w.topics.length) {
+        topicsEl.innerHTML = w.topics.map(function (cat) {
+          var items = (cat.items || []).map(function (t) { return '<li>' + t + '</li>'; }).join('');
+          return '<h3>' + (cat.category || '') + '</h3><ul>' + items + '</ul>';
+        }).join('');
+      }
+    })();
+  </script>
+</body>
+</html>
