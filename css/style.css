@@ -213,6 +213,66 @@ main {
   background: linear-gradient(180deg, var(--purple-50) 0%, var(--white) 100%);
 }
 
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.hero-logo {
+  height: auto;
+  max-height: 5rem;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-logo.climem-logo {
+  max-height: 4.5rem;
+}
+
+.hero-logo.miccai-logo {
+  max-height: 3.5rem;
+  opacity: 0.9;
+  transition: opacity var(--transition);
+}
+
+.hero-logo-link:hover .miccai-logo {
+  opacity: 1;
+}
+
+.hero-logo-link:focus-visible {
+  outline: 2px solid var(--purple-500);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.hero-logos-divider {
+  font-size: 1.25rem;
+  color: var(--purple-300);
+  font-weight: 300;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .hero-logos {
+    gap: 1rem;
+  }
+  .hero-logo.climem-logo { max-height: 3.75rem; }
+  .hero-logo.miccai-logo { max-height: 2.75rem; }
+  .hero-logos-divider { font-size: 1rem; }
+}
+
 .hero-title {
   font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 700;
