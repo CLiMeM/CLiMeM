@@ -203,45 +203,30 @@ a:focus-visible {
   }
 }
 
-/* Main */
+/* Main — consistent base font and full-width content everywhere */
 main {
   min-height: 50vh;
   padding: 2.5rem 0 4rem;
+  font-size: 1.125rem;
 }
 
 .page-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   margin-bottom: 1.5rem;
   color: var(--gray-900);
 }
 
 .page-lead {
   font-size: 1.125rem;
-  color: var(--gray-500);
-  margin-bottom: 2rem;
-  max-width: 50ch;
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+  max-width: none;
 }
 
-/* Call for Paper: full-width text within container */
+/* CFP intro paragraph spacing */
 #cfp-intro .page-lead {
-  max-width: none;
   color: var(--gray-700);
   margin-bottom: 1rem;
-}
-
-/* Venue: full-width text */
-body[data-page="venue"] .page-lead {
-  max-width: none;
-}
-
-/* Proceedings: full-width text */
-body[data-page="proceedings"] .page-lead {
-  max-width: none;
-}
-
-/* Gallery: placeholder box (no photos yet) */
-body[data-page="gallery"] .page-lead,
-body[data-page="gallery"] .gallery-lead {
-  max-width: none;
 }
 
 .gallery-placeholder-wrap {
@@ -302,9 +287,9 @@ body[data-page="gallery"] .gallery-lead {
 }
 
 .hero-desc {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   color: var(--gray-700);
-  max-width: 42ch;
+  max-width: none;
   margin: 0 auto 1.75rem;
 }
 
@@ -361,10 +346,20 @@ body[data-page="gallery"] .gallery-lead {
   border-top: 1px solid var(--gray-200);
 }
 
-.section-title {
+.section-title,
+.section h2 {
   font-size: 1.25rem;
   color: var(--gray-900);
   margin-bottom: 1.25rem;
+}
+
+.section > p {
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+}
+
+.section > p:last-child {
+  margin-bottom: 0;
 }
 
 /* Dates timeline */
@@ -444,7 +439,7 @@ body[data-page="gallery"] .gallery-lead {
 }
 
 .news-preview .news-body {
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   color: var(--gray-700);
   margin-top: 0.25rem;
 }
@@ -480,7 +475,7 @@ body[data-page="gallery"] .gallery-lead {
 .schedule-list .time {
   font-weight: 500;
   color: var(--purple-600);
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
 }
 
 .schedule-list .type-break {
@@ -506,7 +501,7 @@ body[data-page="gallery"] .gallery-lead {
 }
 
 .organizers-list .affiliation {
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   color: var(--gray-500);
 }
 
@@ -526,7 +521,7 @@ body[data-page="gallery"] .gallery-lead {
   width: 100%;
   padding: 1rem 1.25rem;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   color: var(--gray-900);
   background: var(--white);
@@ -563,7 +558,7 @@ body[data-page="gallery"] .gallery-lead {
 
 .faq-a-inner {
   padding: 0.75rem 0;
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   color: var(--gray-700);
   line-height: 1.6;
 }
@@ -694,6 +689,7 @@ body[data-page="gallery"] .gallery-lead {
 }
 
 .news-list .news-body {
+  font-size: 1.125rem;
   margin-top: 0.5rem;
   color: var(--gray-700);
 }
@@ -759,7 +755,7 @@ body[data-page="gallery"] .gallery-lead {
 }
 
 .awards-list .award-desc {
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   color: var(--gray-700);
   margin-top: 0.25rem;
 }
