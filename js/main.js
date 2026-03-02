@@ -4,20 +4,7 @@
 (function () {
   'use strict';
 
-  // Mobile nav: toggle open state when nav list is toggled
   document.addEventListener('DOMContentLoaded', function () {
-    var toggle = document.getElementById('nav-toggle');
-    var navInner = document.getElementById('site-nav-inner');
-    if (toggle && navInner) {
-      var ul = navInner.querySelector('.nav-list');
-      if (ul) {
-        toggle.addEventListener('click', function () {
-          var open = ul.classList.toggle('open');
-          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        });
-      }
-    }
-
     // FAQ accordion (event delegation so it works when FAQ list is injected by inline script)
     var faqList = document.getElementById('faq-list');
     if (faqList) {
