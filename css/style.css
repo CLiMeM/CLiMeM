@@ -228,6 +228,11 @@ main {
   margin-bottom: 1rem;
 }
 
+/* Venue: full-width text */
+body[data-page="venue"] .page-lead {
+  max-width: none;
+}
+
 /* Hero (home) */
 .hero {
   padding: 4rem 0 3rem;
