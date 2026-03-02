@@ -174,8 +174,8 @@ export const workshop: Workshop = {
     { label: 'Workshop date', date: 'TBA', status: 'tbd' }
   ],
   news: [
-    { title: 'Website launched', date: '2026-02-01', blurb: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.', pinned: false },
-    { title: 'Workshop announced', date: '2026-01-15', blurb: 'First edition of CLiMeM will be held at MICCAI 2026. Call for papers and important dates to follow.', pinned: true }
+    { title: 'Website launched', date: '2026-03-03', blurb: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.', pinned: false },
+    { title: 'Workshop accepted', date: '2026-02-07', blurb: 'CLiMeM workshop accepted at MICCAI 2026.', pinned: false }
   ],
   tentativeSchedule: [
     { time: '09:00 – 09:15', title: 'Opening & welcome', type: 'session' },
