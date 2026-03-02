@@ -103,9 +103,9 @@
       note: 'For questions about the workshop, submission, or program, please contact the organizers.'
     },
     nav: [
-      { label: 'Call for Paper', href: 'submission.html' },
+      { label: 'Call for Paper', href: 'call-for-paper.html' },
       { label: 'Submission Guidelines', href: 'submission-guidelines.html' },
-      { label: 'Workshop Program', href: 'program.html' },
+      { label: 'Workshop Program', href: 'workshop-program.html' },
       { label: 'Organizers', href: 'organizers.html' },
       { label: 'Awards', href: 'awards.html' },
       { label: 'Venue', href: 'venue.html' },
@@ -113,8 +113,8 @@
       { label: 'FAQ & Contact', href: 'faq-contact.html' }
     ],
     quickLinks: [
-      { label: 'Submission guidelines', href: 'submission.html' },
-      { label: 'Program & schedule', href: 'program.html' },
+      { label: 'Submission guidelines', href: 'submission-guidelines.html' },
+      { label: 'Program & schedule', href: 'workshop-program.html' },
       { label: 'Organizers', href: 'organizers.html' },
       { label: 'MICCAI 2026', href: 'venue.html' }
     ],
@@ -122,8 +122,8 @@
       title: 'CLiMeM',
       subtitle: 'Continual Learning in Medical Multimodal-Vision',
       description: 'First edition workshop at MICCAI 2026. Bridging continual learning and medical multimodal vision for robust, adaptable clinical AI.',
-      ctaPrimary: { label: 'Submit a paper', href: 'submission.html' },
-      ctaSecondary: { label: 'View program', href: 'program.html' }
+      ctaPrimary: { label: 'Submit a paper', href: 'call-for-paper.html' },
+      ctaSecondary: { label: 'View program', href: 'workshop-program.html' }
     }
   };
   if (typeof window !== 'undefined') window.workshop = workshop;
