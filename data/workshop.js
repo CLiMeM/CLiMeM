@@ -66,8 +66,8 @@
     submissionGuidelinesSections: [
       { title: 'Format', paragraphs: ['Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages (same as MICCAI 2025 format). Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'] },
       { title: 'Double Blind Review', paragraphs: ['CLiMeM reviewing is double blind. Please review the Anonymity guidelines of MICCAI main conference, and confirm that the author field does not break anonymity.'] },
-      { title: 'Paper Submission', paragraphs: ['CLiMeM uses the CMT system for online submission.'] },
-      { title: 'Supplemental Material', paragraphs: ['Supplemental material submission is optional, following same deadline as the main paper. Contents of the supplemental material would be referred to appropriately in the paper, while reviewers are not obliged to read them.'] },
+      { title: 'Paper Submission', paragraphs: ['CLiMeM uses the CMT system for online submission. The submission link will be posted here (TBA).'] },
+      { title: 'Supplemental Material', paragraphs: ['Following MICCAI 2026 guidelines for main paper submission, supplemental material is not allowed.'] },
       { title: 'Submission Originality', paragraphs: ['Submissions should be original; no paper of substantially similar content should be under peer review or has been accepted for a publication elsewhere (conference/journal, not including archived work).'] },
       { title: 'Proceedings', paragraphs: ['The proceedings of CLiMeM 2026 will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS).'] },
       { title: 'Publication Strategy', paragraphs: ['Springer LNCS — Papers will be published as part of the MICCAI Satellite Events joint LNCS proceedings.', 'Workshop papers have been published in Bridging Regulatory Science and Medical Imaging Evaluation; and Distributed, Collaborative, and Federated Learning.'] },

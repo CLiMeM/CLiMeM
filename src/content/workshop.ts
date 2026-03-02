@@ -215,7 +215,7 @@ export const workshop: Workshop = {
     {
       title: 'Format',
       paragraphs: [
-        'Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages (same as MICCAI 2025 format). Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'
+        'Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages (same as MICCAI 202 format). Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'
       ]
     },
     {
@@ -227,13 +227,13 @@ export const workshop: Workshop = {
     {
       title: 'Paper Submission',
       paragraphs: [
-        'CLiMeM uses the CMT system for online submission.'
+        'CLiMeM uses the CMT system for online submission. The submission link will be posted here (TBA).'
       ]
     },
     {
       title: 'Supplemental Material',
       paragraphs: [
-        'Supplemental material submission is optional, following same deadline as the main paper. Contents of the supplemental material would be referred to appropriately in the paper, while reviewers are not obliged to read them.'
+        'Following MICCAI 2026 guidelines for main paper submission, supplemental material is not allowed.'
       ]
     },
     {
