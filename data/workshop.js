@@ -90,7 +90,7 @@
       title: 'MICCAI 2026',
       description: 'CLiMeM will be held in conjunction with MICCAI 2026. Exact date, room, and registration details will be announced when the main conference program is finalized.',
       linkLabel: 'MICCAI 2026 website',
-      linkHref: 'https://miccai2026.org/'
+      linkHref: 'https://conferences.miccai.org/2026/en/default.asp'
     },
     faq: [
       { q: 'What is the workshop format?', a: 'Half-day workshop with invited talks and contributed oral/poster presentations. Exact format will follow MICCAI 2026 workshop guidelines.' },
