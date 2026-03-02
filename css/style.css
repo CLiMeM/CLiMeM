@@ -495,7 +495,22 @@ main {
   gap: 1rem;
 }
 
-.organizers-list li {
+.organizers-list > li.organizers-group {
+  list-style: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.organizers-list > li.organizers-group:last-child {
+  margin-bottom: 0;
+}
+
+.organizers-list > li.organizers-group .organizers-list {
+  margin-top: 1rem;
+}
+
+.organizers-list li:not(.organizers-group) {
   padding: 1rem;
   border: 1px solid var(--gray-200);
   border-radius: 0.5rem;

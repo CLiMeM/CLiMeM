@@ -48,14 +48,27 @@
       document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Organizers';
       var heading = document.getElementById('organizers-heading'); if (heading) heading.textContent = 'Organizers';
       var lead = document.getElementById('organizers-lead'); if (lead) lead.textContent = 'Organizing team for the ' + (w.edition || '') + ' of ' + (w.workshopName || '') + '.';
-      var list = w.organizers || [];
       var el = document.getElementById('organizers-list');
-      if (el && list.length) {
-        el.innerHTML = list.map(function (o) {
-          var aff = [o.affiliation, o.country].filter(Boolean).join(', ');
-          var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
-          return '<li><span class="name">' + namePart + '</span><br><span class="affiliation">' + (o.title || '') + (aff ? ' — ' + aff : '') + '</span></li>';
+      if (!el) return;
+      var groups = w.organizerGroups;
+      if (groups && groups.length) {
+        el.innerHTML = groups.map(function (grp) {
+          var items = (grp.organizers || []).map(function (o) {
+            var aff = o.affiliation || '';
+            var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
+            return '<li><span class="name">' + namePart + '</span><br><span class="affiliation">' + aff + '</span></li>';
+          }).join('');
+          return '<li class="organizers-group"><h2 class="section-title">' + (grp.title || '') + '</h2><ul class="organizers-list">' + items + '</ul></li>';
         }).join('');
+      } else {
+        var list = w.organizers || [];
+        if (list.length) {
+          el.innerHTML = list.map(function (o) {
+            var aff = o.affiliation || '';
+            var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
+            return '<li><span class="name">' + namePart + '</span><br><span class="affiliation">' + aff + '</span></li>';
+          }).join('');
+        }
       }
     })();
   </script>

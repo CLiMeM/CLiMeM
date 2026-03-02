@@ -22,9 +22,32 @@
       { category: 'Robustness & adaptation', items: ['Domain shift and distribution shift in clinical data'] }
     ],
     organizers: [
-      { name: 'Organizer 1', title: 'Organizer', affiliation: 'Institution', country: 'Country' },
-      { name: 'Organizer 2', title: 'Organizer', affiliation: 'Institution', country: 'Country' },
-      { name: 'Organizer 3', title: 'Organizer', affiliation: 'Institution', country: 'Country' }
+      { name: 'Nourhan Bayasi, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, UBC & BC Cancer (Canada)', country: 'Canada' },
+      { name: 'Fereshteh Yousefirizi, PhD', title: '', affiliation: 'Staff Scientist, BC Cancer Research Institute (Canada)', country: 'Canada' },
+      { name: 'Jamil Fayyad, PhD', title: '', affiliation: 'Senior Data Scientist, Kinsol (Canada)', country: 'Canada' },
+      { name: 'Camila González, PhD', title: '', affiliation: 'Assistant Professor, Medical University of Vienna (Austria)', country: 'Austria' },
+      { name: 'Numan Saeed, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, MBZUAI (UAE)', country: 'UAE' },
+      { name: 'Mohammad Yaqub, PhD', title: '', affiliation: 'Associate Professor of Computer Vision, MBZUAI (UAE)', country: 'UAE' },
+      { name: 'Babak Saboury, MD, MPH, DABR, DABNM', title: '', affiliation: 'Diagnostic Radiologist, Chief Clinical Data Science Officer & Medical Director, United Theranostics (USA)', country: 'USA' },
+      { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA' },
+      { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland' },
+      { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada' }
+    ],
+    organizerGroups: [
+      { title: 'Technical & Research Leadership', organizers: [
+        { name: 'Nourhan Bayasi, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, UBC & BC Cancer (Canada)', country: 'Canada' },
+        { name: 'Fereshteh Yousefirizi, PhD', title: '', affiliation: 'Staff Scientist, BC Cancer Research Institute (Canada)', country: 'Canada' },
+        { name: 'Jamil Fayyad, PhD', title: '', affiliation: 'Senior Data Scientist, Kinsol (Canada)', country: 'Canada' },
+        { name: 'Camila González, PhD', title: '', affiliation: 'Assistant Professor, Medical University of Vienna (Austria)', country: 'Austria' },
+        { name: 'Numan Saeed, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, MBZUAI (UAE)', country: 'UAE' },
+        { name: 'Mohammad Yaqub, PhD', title: '', affiliation: 'Associate Professor of Computer Vision, MBZUAI (UAE)', country: 'UAE' }
+      ] },
+      { title: 'Clinical Leadership', organizers: [
+        { name: 'Babak Saboury, MD, MPH, DABR, DABNM', title: '', affiliation: 'Diagnostic Radiologist, Chief Clinical Data Science Officer & Medical Director, United Theranostics (USA)', country: 'USA' },
+        { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada' },
+        { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA' },
+        { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland' }
+      ] }
     ],
     importantDates: [
       { label: 'Paper submission deadline', date: 'TBA', status: 'tbd' },
