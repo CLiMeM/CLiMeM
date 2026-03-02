@@ -142,7 +142,7 @@ export const workshop: Workshop = {
   edition: 'First edition',
   tagline: 'Continual Learning in Medical Multimodal-Vision',
   description: {
-    short: 'First edition workshop at MICCAI 2026. Bridging continual learning and medical multimodal vision for robust, adaptable clinical AI.',
+    short: "CLiMeM's first edition workshop. Bridging continual learning and medical multimodal vision for robust, adaptable clinical AI.",
     long: 'Continual learning in medical multimodal-vision aims to develop AI systems that learn incrementally from evolving data and multiple modalities (imaging, text, signals) without forgetting, enabling sustainable deployment in clinical settings. Clinical environments produce non-stationary data streams and new modalities over time. Models that retrain from scratch are costly and risk forgetting; continual and multimodal learning are key to scalable, reliable medical AI.',
     theme: 'Continual learning in medical multimodal-vision aims to develop AI systems that learn incrementally from evolving data and multiple modalities (imaging, text, signals) without forgetting, enabling sustainable deployment in clinical settings.',
     motivation: 'Clinical environments produce non-stationary data streams and new modalities over time. Models that retrain from scratch are costly and risk forgetting; continual and multimodal learning are key to scalable, reliable medical AI.',
@@ -367,9 +367,9 @@ export const workshop: Workshop = {
     { label: 'MICCAI 2026', href: 'venue.html' }
   ],
   hero: {
-    title: 'CLiMeM',
+    title: 'CLiMeM | MICCAI 2026',
     subtitle: 'Continual Learning in Medical Multimodal-Vision',
-    description: 'First edition workshop at MICCAI 2026. Bridging continual learning and medical multimodal vision for robust, adaptable clinical AI.',
+    description: "CLiMeM's first edition workshop. Bridging continual learning and medical multimodal vision for robust, adaptable clinical AI.",
     ctaPrimary: { label: 'Submit a paper', href: 'call-for-paper.html' },
     ctaSecondary: { label: 'View program', href: 'workshop-program.html' }
   }
