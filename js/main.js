@@ -18,13 +18,16 @@
       }
     }
 
-    // FAQ accordion
-    document.querySelectorAll('.faq-item').forEach(function (item) {
-      var btn = item.querySelector('.faq-q');
-      var panel = item.querySelector('.faq-a');
-      if (!btn || !panel) return;
-
-      btn.addEventListener('click', function () {
+    // FAQ accordion (event delegation so it works when FAQ list is injected by inline script)
+    var faqList = document.getElementById('faq-list');
+    if (faqList) {
+      faqList.addEventListener('click', function (e) {
+        var btn = e.target.closest('.faq-q');
+        if (!btn) return;
+        var item = btn.closest('.faq-item');
+        if (!item) return;
+        var panel = item.querySelector('.faq-a');
+        if (!panel) return;
         var isOpen = item.classList.contains('open');
         document.querySelectorAll('.faq-item').forEach(function (other) {
           other.classList.remove('open');
@@ -39,7 +42,7 @@
           btn.setAttribute('aria-expanded', 'true');
         }
       });
-    });
+    }
 
     // Close mobile nav on link click (same page)
     var navLinks = document.querySelectorAll('.site-nav a[href]');
@@ -57,28 +60,4 @@
       });
     });
   });
-
-  // Expose for FAQ page when FAQ is rendered after DOM
-  window.initFaq = function () {
-    document.querySelectorAll('.faq-item').forEach(function (item) {
-      var btn = item.querySelector('.faq-q');
-      var panel = item.querySelector('.faq-a');
-      if (!btn || !panel) return;
-      btn.addEventListener('click', function () {
-        var isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (other) {
-          other.classList.remove('open');
-          var p = other.querySelector('.faq-a');
-          var b = other.querySelector('.faq-q');
-          if (p) p.hidden = true;
-          if (b) b.setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          panel.hidden = false;
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-  };
 })();
