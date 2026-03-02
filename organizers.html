@@ -52,13 +52,14 @@
       if (!el) return;
       var groups = w.organizerGroups;
       if (groups && groups.length) {
-        el.innerHTML = groups.map(function (grp) {
+        el.innerHTML = groups.map(function (grp, idx) {
+          var gridClass = idx === 0 ? 'organizers-grid-3' : 'organizers-grid-4';
           var items = (grp.organizers || []).map(function (o) {
             var aff = o.affiliation || '';
             var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
             return '<li><span class="name">' + namePart + '</span><br><span class="affiliation">' + aff + '</span></li>';
           }).join('');
-          return '<li class="organizers-group"><h2 class="section-title">' + (grp.title || '') + '</h2><ul class="organizers-list">' + items + '</ul></li>';
+          return '<li class="organizers-group ' + gridClass + '"><h2 class="section-title">' + (grp.title || '') + '</h2><ul class="organizers-list organizers-cards">' + items + '</ul></li>';
         }).join('');
       } else {
         var list = w.organizers || [];

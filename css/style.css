@@ -495,6 +495,31 @@ main {
   gap: 1rem;
 }
 
+/* Technical & Research: 3 columns (3 then 3) */
+.organizers-group.organizers-grid-3 .organizers-cards {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1rem;
+}
+
+/* Clinical: 4 in one row */
+.organizers-group.organizers-grid-4 .organizers-cards {
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .organizers-group.organizers-grid-4 .organizers-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .organizers-group.organizers-grid-3 .organizers-cards,
+  .organizers-group.organizers-grid-4 .organizers-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 .organizers-list > li.organizers-group {
   list-style: none;
   border: none;
