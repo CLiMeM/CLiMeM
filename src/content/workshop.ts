@@ -119,6 +119,8 @@ export interface Workshop {
   venue: VenueInfo;
   /** Intro text for the Proceedings page (first edition: no papers yet) */
   proceedingsPageIntro?: string;
+  /** Gallery page: placeholder box label (no photos yet) */
+  galleryPlaceholderLabel?: string;
   faq: FaqItem[];
   contact: ContactInfo;
   /** Nav and UI wiring — derived from workshop or explicit */
@@ -333,6 +335,7 @@ export const workshop: Workshop = {
     linkHref: 'https://conferences.miccai.org/2026/en/default.asp'
   },
   proceedingsPageIntro: 'All proceedings will be listed below. This is the first edition of CLiMeM; once the workshop has taken place, accepted papers will appear here.',
+  galleryPlaceholderLabel: 'CLiMeM | MICCAI 2026',
   faq: [
     { q: 'What is the workshop format?', a: 'CLiMeM is a half-day workshop with invited talks and contributed oral and poster presentations. The exact schedule and format will follow MICCAI 2026 workshop guidelines. Check the Workshop Program page for updates.' },
     { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
@@ -354,6 +357,7 @@ export const workshop: Workshop = {
     { label: 'Awards', href: 'awards.html' },
     { label: 'Venue', href: 'venue.html' },
     { label: 'Proceedings', href: 'proceedings.html' },
+    { label: 'Gallery', href: 'gallery.html' },
     { label: 'FAQ & Contact', href: 'faq-contact.html' }
   ],
   quickLinks: [

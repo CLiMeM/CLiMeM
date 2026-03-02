@@ -238,6 +238,48 @@ body[data-page="proceedings"] .page-lead {
   max-width: none;
 }
 
+/* Gallery: placeholder box (no photos yet) */
+body[data-page="gallery"] .page-lead,
+body[data-page="gallery"] .gallery-lead {
+  max-width: none;
+}
+
+.gallery-placeholder-wrap {
+  margin-top: 2rem;
+}
+
+.gallery-placeholder-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16rem;
+  padding: 2rem 2.5rem;
+  border: 2px solid var(--purple-300);
+  border-radius: 0.5rem;
+  background: var(--purple-50);
+  color: var(--purple-800);
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.gallery-placeholder-box:hover,
+.gallery-placeholder-box:focus {
+  background: var(--purple-100);
+  border-color: var(--purple-500);
+  color: var(--purple-900);
+}
+
+.gallery-placeholder-box:focus-visible {
+  outline: 2px solid var(--purple-500);
+  outline-offset: 2px;
+}
+
+.gallery-placeholder-label {
+  white-space: nowrap;
+}
+
 /* Hero (home) */
 .hero {
   padding: 4rem 0 3rem;

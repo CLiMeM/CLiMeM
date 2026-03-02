@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="gallery">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="container">
+      <h1 class="page-title" id="gallery-heading">Gallery</h1>
+      <p class="page-lead gallery-lead">Photos from the workshop will be added here after the event. For now, there are no photos to display.</p>
+      <div class="gallery-placeholder-wrap">
+        <a href="#" id="gallery-placeholder-box" class="gallery-placeholder-box" aria-label="Gallery placeholder — CLiMeM at MICCAI 2026">
+          <span id="gallery-placeholder-label" class="gallery-placeholder-label">CLiMeM | MICCAI 2026</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Gallery';
+      var heading = document.getElementById('gallery-heading'); if (heading) heading.textContent = 'Gallery';
+      var label = document.getElementById('gallery-placeholder-label');
+      if (label && w.galleryPlaceholderLabel) label.textContent = w.galleryPlaceholderLabel;
+    })();
+  </script>
+</body>
+</html>

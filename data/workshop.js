@@ -103,6 +103,7 @@
       linkHref: 'https://conferences.miccai.org/2026/en/default.asp'
     },
     proceedingsPageIntro: 'All proceedings will be listed below. This is the first edition of CLiMeM; once the workshop has taken place, accepted papers will appear here.',
+    galleryPlaceholderLabel: 'CLiMeM | MICCAI 2026',
     faq: [
       { q: 'What is the workshop format?', a: 'CLiMeM is a half-day workshop with invited talks and contributed oral and poster presentations. The exact schedule and format will follow MICCAI 2026 workshop guidelines. Check the Workshop Program page for updates.' },
       { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
@@ -124,6 +125,7 @@
       { label: 'Awards', href: 'awards.html' },
       { label: 'Venue', href: 'venue.html' },
       { label: 'Proceedings', href: 'proceedings.html' },
+      { label: 'Gallery', href: 'gallery.html' },
       { label: 'FAQ & Contact', href: 'faq-contact.html' }
     ],
     quickLinks: [
