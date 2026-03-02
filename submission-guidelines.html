@@ -28,16 +28,7 @@
     <div class="container">
       <h1 class="page-title" id="guidelines-heading"></h1>
       <p class="page-lead" id="guidelines-lead"></p>
-
-      <section class="section" aria-labelledby="guidelines-content-title">
-        <h2 id="guidelines-content-title">Guidelines</h2>
-        <ul id="guidelines-bullets"></ul>
-      </section>
-
-      <section class="section" aria-labelledby="formatting-title">
-        <h2 id="formatting-title">Formatting rules</h2>
-        <ul id="guidelines-formatting"></ul>
-      </section>
+      <div id="guidelines-sections"></div>
     </div>
   </main>
 
@@ -57,14 +48,16 @@
       document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Submission Guidelines';
       var heading = document.getElementById('guidelines-heading'); if (heading) heading.textContent = 'Submission Guidelines';
       var lead = document.getElementById('guidelines-lead'); if (lead) lead.textContent = 'Format and submission requirements for papers.';
-      var gl = w.submissionGuidelines || {};
-      var bullets = document.getElementById('guidelines-bullets');
-      if (bullets && gl.bullets && gl.bullets.length) {
-        bullets.innerHTML = gl.bullets.map(function (g) { return '<li>' + g + '</li>'; }).join('');
-      }
-      var fmt = document.getElementById('guidelines-formatting');
-      if (fmt && gl.formattingRulesPlaceholders && gl.formattingRulesPlaceholders.length) {
-        fmt.innerHTML = gl.formattingRulesPlaceholders.map(function (r) { return '<li>' + r + '</li>'; }).join('');
+      var container = document.getElementById('guidelines-sections');
+      var sections = w.submissionGuidelinesSections;
+      if (container && sections && sections.length) {
+        container.innerHTML = sections.map(function (sec) {
+          var paras = (sec.paragraphs || []).map(function (p) { return '<p class="guidelines-para">' + p + '</p>'; }).join('');
+          return '<section class="section guidelines-section"><h2 class="section-title">' + (sec.title || '') + '</h2>' + paras + '</section>';
+        }).join('');
+      } else {
+        var gl = w.submissionGuidelines || {};
+        container.innerHTML = '<section class="section"><h2>Guidelines</h2><ul>' + (gl.bullets || []).map(function (g) { return '<li>' + g + '</li>'; }).join('') + '</ul></section><section class="section"><h2>Formatting rules</h2><ul>' + (gl.formattingRulesPlaceholders || []).map(function (r) { return '<li>' + r + '</li>'; }).join('') + '</ul></section>';
       }
     })();
   </script>

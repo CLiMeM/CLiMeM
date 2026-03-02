@@ -677,6 +677,16 @@ main {
   color: var(--purple-500);
 }
 
+.guidelines-section .guidelines-para {
+  margin-bottom: 1rem;
+  color: var(--gray-700);
+  max-width: none;
+}
+
+.guidelines-section .guidelines-para:last-child {
+  margin-bottom: 0;
+}
+
 /* Awards list */
 .awards-list {
   list-style: none;
