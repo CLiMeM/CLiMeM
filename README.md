@@ -3,6 +3,9 @@
 **CLiMeM: Continual Learning in Medical Multimodal-Vision**  
 First edition workshop at MICCAI 2026.
 
+https://climem.github.io/CLiMeM/
+
+
 ## Overview
 
 Minimal, fast, accessible static site. Purple/white theme. **All content comes from a single TypeScript module** — no hardcoded text in pages.
