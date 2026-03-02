@@ -278,13 +278,13 @@ export const workshop: Workshop = {
     note: 'For questions about the workshop, submission, or program, please contact the organizers.'
   },
   nav: [
+    { label: 'Home', href: 'index.html' },
     { label: 'Call for Paper', href: 'call-for-paper.html' },
     { label: 'Submission Guidelines', href: 'submission-guidelines.html' },
     { label: 'Workshop Program', href: 'workshop-program.html' },
     { label: 'Organizers', href: 'organizers.html' },
     { label: 'Awards', href: 'awards.html' },
     { label: 'Venue', href: 'venue.html' },
-    { label: 'News', href: 'news.html' },
     { label: 'FAQ & Contact', href: 'faq-contact.html' }
   ],
   quickLinks: [
