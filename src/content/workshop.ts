@@ -187,6 +187,7 @@ export const workshop: Workshop = {
     { name: 'Babak Saboury, MD, MPH, DABR, DABNM', title: '', affiliation: 'Diagnostic Radiologist, Chief Clinical Data Science Officer & Medical Director, United Theranostics (USA)', country: 'USA' },
     { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA' },
     { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland' },
+    { name: 'Abhinav K. Jha, PhD', title: '', affiliation: 'Associate Professor of Biomedical Imaging and of Radiology, Washington University in St. Louis (USA)', country: 'USA' },
     { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada' }
   ],
   organizerGroups: [
@@ -207,6 +208,7 @@ export const workshop: Workshop = {
         { name: 'Babak Saboury, MD, MPH, DABR, DABNM', title: '', affiliation: 'Diagnostic Radiologist, Chief Clinical Data Science Officer & Medical Director, United Theranostics (USA)', country: 'USA', photo: 'photo-Babak.png' },
         { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA', photo: 'photo-Tyler.png' },
         { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland', photo: 'photo-Isaac.png' },
+        { name: 'Abhinav K. Jha, PhD', title: '', affiliation: 'Associate Professor of Biomedical Imaging and of Radiology, Washington University in St. Louis (USA)', country: 'USA', photo: 'photo-Abhinav.png' },
         { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'photo-Arman.png' }
       ]
     }

@@ -525,21 +525,21 @@ main {
   margin-top: 1rem;
 }
 
-/* Clinical: 4 in one row */
-.organizers-group.organizers-grid-4 .organizers-cards {
-  grid-template-columns: repeat(4, 1fr);
+/* Clinical: 5 in one row */
+.organizers-group.organizers-grid-5 .organizers-cards {
+  grid-template-columns: repeat(5, 1fr);
   margin-top: 1rem;
 }
 
-@media (max-width: 900px) {
-  .organizers-group.organizers-grid-4 .organizers-cards {
+@media (max-width: 1100px) {
+  .organizers-group.organizers-grid-5 .organizers-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .organizers-group.organizers-grid-3 .organizers-cards,
-  .organizers-group.organizers-grid-4 .organizers-cards {
+  .organizers-group.organizers-grid-5 .organizers-cards {
     grid-template-columns: 1fr;
   }
 }
