@@ -875,13 +875,14 @@ main {
 
 .sponsor-logo-wrap {
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .sponsor-logo {
   max-width: 100%;
   height: auto;
-  max-height: 5rem;
+  max-height: 8rem;
   width: auto;
-  display: block;
+  display: inline-block;
   object-fit: contain;
 }
