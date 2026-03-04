@@ -29,6 +29,11 @@
       <h1 class="page-title" id="awards-heading"></h1>
       <p class="page-lead" id="awards-lead"></p>
       <ul class="awards-list" id="awards-list"></ul>
+      <section class="section sponsor-section" id="sponsor-section" aria-labelledby="sponsor-heading">
+        <h2 id="sponsor-heading" class="section-title">Sponsor</h2>
+        <p id="sponsor-text" class="sponsor-thanks"></p>
+        <div class="sponsor-logo-wrap" id="sponsor-logo-wrap"></div>
+      </section>
     </div>
   </main>
 
@@ -52,8 +57,20 @@
       var el = document.getElementById('awards-list');
       if (el && list.length) {
         el.innerHTML = list.map(function (a) {
-          return '<li><span class="award-name">' + (a.name || '') + '</span><div class="award-desc">' + (a.description || '') + '</div></li>';
+          return '<li><span class="award-name">' + (a.name || '') + ' (TBA)</span><div class="award-desc">' + (a.description || '') + '</div></li>';
         }).join('');
+      }
+      var sponsor = w.sponsor;
+      var sponsorText = document.getElementById('sponsor-text');
+      var sponsorWrap = document.getElementById('sponsor-logo-wrap');
+      if (sponsor) {
+        if (sponsorText) sponsorText.textContent = sponsor.thankYouText || '';
+        if (sponsorWrap && sponsor.image) {
+          sponsorWrap.innerHTML = '<img src="images/' + sponsor.image + '" alt="Sponsor logo" class="sponsor-logo">';
+        }
+      } else {
+        var sec = document.getElementById('sponsor-section');
+        if (sec) sec.style.display = 'none';
       }
     })();
   </script>

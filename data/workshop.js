@@ -121,6 +121,10 @@
       { name: 'Best Paper Award', description: 'Recognizes the best contributed paper for novelty, impact, and clarity.' },
       { name: 'Best Presentation Award', description: 'Recognizes the best oral presentation at the workshop.' }
     ],
+    sponsor: {
+      thankYouText: 'We thank QURIT Lab at BC Cancer and UBC in Vancouver, Canada for sponsoring this workshop.',
+      image: 'sponsers.png'
+    },
     venue: {
       title: 'MICCAI 2026',
       description: 'CLiMeM will be held in conjunction with MICCAI 2026. Exact date, room, and registration details will be announced when the main conference program is finalized.',
