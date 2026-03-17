@@ -123,7 +123,8 @@
     ],
     sponsor: {
       thankYouText: 'We thank QURIT Lab at BC Cancer and UBC in Vancouver, Canada for sponsoring this workshop.',
-      image: 'sponsers.png'
+      image: 'sponsers.png',
+      linkHref: 'https://www.bccrc.ca/dept/io-programs/qurit/'
     },
     venue: {
       title: 'MICCAI 2026',

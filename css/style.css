@@ -878,6 +878,15 @@ main {
   text-align: center;
 }
 
+.sponsor-logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.sponsor-logo-link:hover {
+  opacity: 0.9;
+}
+
 .sponsor-logo {
   max-width: 100%;
   height: auto;

@@ -64,9 +64,19 @@
       var sponsorText = document.getElementById('sponsor-text');
       var sponsorWrap = document.getElementById('sponsor-logo-wrap');
       if (sponsor) {
-        if (sponsorText) sponsorText.textContent = sponsor.thankYouText || '';
+        if (sponsorText) {
+          var msg = sponsor.thankYouText || '';
+          if (sponsor.linkHref && msg.indexOf('QURIT Lab') !== -1) {
+            msg = msg.replace('QURIT Lab', '<a href="' + sponsor.linkHref + '" target="_blank" rel="noopener">QURIT Lab</a>');
+          }
+          sponsorText.innerHTML = msg;
+        }
         if (sponsorWrap && sponsor.image) {
-          sponsorWrap.innerHTML = '<img src="images/' + sponsor.image + '" alt="Sponsor logo" class="sponsor-logo">';
+          var imgHtml = '<img src="images/' + sponsor.image + '" alt="QURIT Lab" class="sponsor-logo">';
+          if (sponsor.linkHref) {
+            imgHtml = '<a href="' + sponsor.linkHref + '" target="_blank" rel="noopener" class="sponsor-logo-link">' + imgHtml + '</a>';
+          }
+          sponsorWrap.innerHTML = imgHtml;
         }
       } else {
         var sec = document.getElementById('sponsor-section');
