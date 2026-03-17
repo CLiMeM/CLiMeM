@@ -36,19 +36,19 @@
     ],
     organizerGroups: [
       { title: 'Technical Leadership', organizers: [
-        { name: 'Nourhan Bayasi, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'nourhan_bayasi.jpg' },
-        { name: 'Fereshteh Yousefirizi, PhD', title: '', affiliation: 'Staff Scientist, BC Cancer Research Institute (Canada)', country: 'Canada', photo: 'Fereshteh_Yousefirizi.jpg' },
-        { name: 'Jamil Fayyad, PhD', title: '', affiliation: 'Senior Data Scientist, Kinsol (Canada)', country: 'Canada', photo: 'Jamil_Fayyad.jpg' },
-        { name: 'Camila González, PhD', title: '', affiliation: 'Assistant Professor, Medical University of Vienna (Austria)', country: 'Austria', photo: 'Camila_González.png' },
-        { name: 'Numan Saeed, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, MBZUAI (UAE)', country: 'UAE', photo: 'Numan_Saeed.jpg' },
-        { name: 'Mohammad Yaqub, PhD', title: '', affiliation: 'Associate Professor of Computer Vision, MBZUAI (UAE)', country: 'UAE', photo: 'Mohammad_Yaqub.jpg' }
+        { name: 'Nourhan Bayasi, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'nourhan_bayasi.jpg', website: 'https://www.linkedin.com/in/nourhan-bayasi-9a28836b/?originalSubdomain=ca' },
+        { name: 'Fereshteh Yousefirizi, PhD', title: '', affiliation: 'Staff Scientist, BC Cancer Research Institute (Canada)', country: 'Canada', photo: 'Fereshteh_Yousefirizi.jpg', website: 'https://www.linkedin.com/in/fereshteh-yousefirizi-a9132b78/?originalSubdomain=ca' },
+        { name: 'Jamil Fayyad, PhD', title: '', affiliation: 'Senior Data Scientist, Kinsol (Canada)', country: 'Canada', photo: 'Jamil_Fayyad.jpg', website: 'https://www.linkedin.com/in/jamilfayyad/?originalSubdomain=ca' },
+        { name: 'Camila González, PhD', title: '', affiliation: 'Assistant Professor, Medical University of Vienna (Austria)', country: 'Austria', photo: 'Camila_González.png', website: 'https://www.linkedin.com/in/camila-gonz%C3%A1lez-618a5b188/' },
+        { name: 'Numan Saeed, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, MBZUAI (UAE)', country: 'UAE', photo: 'Numan_Saeed.jpg', website: 'https://www.linkedin.com/in/numansaeed-pk/?originalSubdomain=ae' },
+        { name: 'Mohammad Yaqub, PhD', title: '', affiliation: 'Associate Professor of Computer Vision, MBZUAI (UAE)', country: 'UAE', photo: 'Mohammad_Yaqub.jpg', website: 'https://www.linkedin.com/in/mohammad-yaqub/?originalSubdomain=ae' }
       ] },
       { title: 'Translational Leadership', organizers: [
-        { name: 'Babak Saboury, MD, MPH, DABR, DABNM', title: '', affiliation: 'Diagnostic Radiologist, Chief Clinical Data Science Officer & Medical Director, United Theranostics (USA)', country: 'USA', photo: 'Babak_Saboury.jpg' },
-        { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA', photo: 'Tyler_Bradshaw.jpg' },
-        { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland', photo: 'Isaac_Shiri.jpg' },
-        { name: 'Abhinav K. Jha, PhD', title: '', affiliation: 'Associate Professor of Biomedical Imaging and of Radiology, Washington University in St. Louis (USA)', country: 'USA', photo: 'Abhinav_K.png' },
-        { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'Arman_Rahmim.jpg' }
+        { name: 'Babak Saboury, MD, MPH, DABR, DABNM', title: '', affiliation: 'Diagnostic Radiologist, Chief Clinical Data Science Officer & Medical Director, United Theranostics (USA)', country: 'USA', photo: 'Babak_Saboury.jpg', website: 'https://www.linkedin.com/in/babak-saboury-42637510/' },
+        { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA', photo: 'Tyler_Bradshaw.jpg', website: 'https://www.linkedin.com/in/tyler-j-bradshaw-92387288/' },
+        { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland', photo: 'Isaac_Shiri.jpg', website: 'https://www.linkedin.com/in/isaac-shiri-8267936a/?originalSubdomain=ch' },
+        { name: 'Abhinav K. Jha, PhD', title: '', affiliation: 'Associate Professor of Biomedical Imaging and of Radiology, Washington University in St. Louis (USA)', country: 'USA', photo: 'Abhinav_K.png', website: 'https://www.linkedin.com/in/abhinav-jha-1a37b96/' },
+        { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'Arman_Rahmim.jpg', website: 'https://www.linkedin.com/in/rahmim/?originalSubdomain=ca' }
       ] }
     ],
     importantDates: [
