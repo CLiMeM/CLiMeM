@@ -525,6 +525,12 @@ main {
   margin-top: 1rem;
 }
 
+/* Graduate Students: 2 columns */
+.organizers-group.organizers-grid-2 .organizers-cards {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+
 /* Clinical: 5 in one row */
 .organizers-group.organizers-grid-5 .organizers-cards {
   grid-template-columns: repeat(5, 1fr);
@@ -538,6 +544,7 @@ main {
 }
 
 @media (max-width: 768px) {
+  .organizers-group.organizers-grid-2 .organizers-cards,
   .organizers-group.organizers-grid-3 .organizers-cards,
   .organizers-group.organizers-grid-5 .organizers-cards {
     grid-template-columns: 1fr;

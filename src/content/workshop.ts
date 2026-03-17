@@ -190,7 +190,9 @@ export const workshop: Workshop = {
     { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA' },
     { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland' },
     { name: 'Abhinav K. Jha, PhD', title: '', affiliation: 'Associate Professor of Biomedical Imaging and of Radiology, Washington University in St. Louis (USA)', country: 'USA' },
-    { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada' }
+    { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada' },
+    { name: 'Monica Luo', title: '', affiliation: 'MD/PhD Candidate at UBC', country: 'Canada' },
+    { name: 'Reza Hamidpour, MSc', title: '', affiliation: 'PhD Student at UBC', country: 'Canada' }
   ],
   organizerGroups: [
     {
@@ -212,6 +214,13 @@ export const workshop: Workshop = {
         { name: 'Isaac Shiri, PhD', title: '', affiliation: 'Head of Artificial Intelligence in Cardiovascular Medicine, Bern University Hospital (Switzerland)', country: 'Switzerland', photo: 'Isaac_Shiri.jpg', website: 'https://www.linkedin.com/in/isaac-shiri-8267936a/?originalSubdomain=ch' },
         { name: 'Abhinav K. Jha, PhD', title: '', affiliation: 'Associate Professor of Biomedical Imaging and of Radiology, Washington University in St. Louis (USA)', country: 'USA', photo: 'Abhinav_K.png', website: 'https://www.linkedin.com/in/abhinav-jha-1a37b96/' },
         { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'Arman_Rahmim.jpg', website: 'https://www.linkedin.com/in/rahmim/?originalSubdomain=ca' }
+      ]
+    },
+    {
+      title: 'Graduate Students',
+      organizers: [
+        { name: 'Monica Luo', title: '', affiliation: 'MD/PhD Candidate at UBC', country: 'Canada' },
+        { name: 'Reza Hamidpour, MSc', title: '', affiliation: 'PhD Student at UBC', country: 'Canada' }
       ]
     }
   ],

@@ -52,8 +52,11 @@
       if (!el) return;
       var groups = w.organizerGroups;
       if (groups && groups.length) {
-        el.innerHTML = groups.map(function (grp, idx) {
-          var gridClass = idx === 0 ? 'organizers-grid-3' : 'organizers-grid-5';
+        el.innerHTML = groups.map(function (grp) {
+          var title = (grp.title || '').toLowerCase();
+          var gridClass = 'organizers-grid-3';
+          if (title.indexOf('translational') !== -1) gridClass = 'organizers-grid-5';
+          if (title.indexOf('graduate') !== -1) gridClass = 'organizers-grid-2';
           var items = (grp.organizers || []).map(function (o) {
             var aff = o.affiliation || '';
             var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');
