@@ -297,21 +297,21 @@ main {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(2.75rem, 9vw, 4.25rem);
   font-weight: 700;
   color: var(--purple-800);
   margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1.2rem, 3.5vw, 1.6rem);
   color: var(--purple-600);
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .hero-desc {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--gray-700);
   max-width: none;
   margin: 0 auto 1.75rem;
