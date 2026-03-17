@@ -194,7 +194,7 @@ export const workshop: Workshop = {
   ],
   organizerGroups: [
     {
-      title: 'Technical & Research Leadership',
+      title: 'Technical Leadership',
       organizers: [
         { name: 'Nourhan Bayasi, PhD', title: '', affiliation: 'Postdoctoral Research Fellow, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'nourhan_bayasi.jpg' },
         { name: 'Fereshteh Yousefirizi, PhD', title: '', affiliation: 'Staff Scientist, BC Cancer Research Institute (Canada)', country: 'Canada', photo: 'Fereshteh_Yousefirizi.jpg' },
@@ -205,7 +205,7 @@ export const workshop: Workshop = {
       ]
     },
     {
-      title: 'Clinical Leadership',
+      title: 'Translational Leadership',
       organizers: [
         { name: 'Babak Saboury, MD, MPH, DABR, DABNM', title: '', affiliation: 'Diagnostic Radiologist, Chief Clinical Data Science Officer & Medical Director, United Theranostics (USA)', country: 'USA', photo: 'Babak_Saboury.jpg' },
         { name: 'Tyler Bradshaw, PhD', title: '', affiliation: 'Associate Professor & Director of Clinical Nuclear Medicine Physics, University of Wisconsin–Madison (USA)', country: 'USA', photo: 'Tyler_Bradshaw.jpg' },
