@@ -53,8 +53,8 @@
         { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'Arman_Rahmim.jpg', website: 'https://www.linkedin.com/in/rahmim/?originalSubdomain=ca' }
       ] },
       { title: 'Graduate Students', organizers: [
-        { name: 'Monica Luo', title: '', affiliation: 'MD/PhD Candidate at UBC', country: 'Canada' },
-        { name: 'Reza Hamidpour, MSc', title: '', affiliation: 'PhD Student at UBC', country: 'Canada' }
+        { name: 'Monica Luo', title: '', affiliation: 'MD/PhD Candidate at UBC', country: 'Canada', photo: 'monica.png' },
+        { name: 'Reza Hamidpour, MSc', title: '', affiliation: 'PhD Student at UBC', country: 'Canada', photo: 'reza.jpg' }
       ] }
     ],
     importantDates: [
