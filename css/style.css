@@ -311,7 +311,7 @@ main {
 }
 
 .hero-desc {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: var(--gray-700);
   max-width: none;
   margin: 0 auto 1.75rem;
