@@ -61,7 +61,7 @@
       { label: 'Paper submission deadline', date: 'TBA', status: 'tbd' },
       { label: 'Author notification', date: 'TBA', status: 'tbd' },
       { label: 'Camera-ready deadline', date: 'TBA', status: 'tbd' },
-      { label: 'Workshop date', date: 'TBA', status: 'tbd' }
+      { label: 'In-person workshop @MICCAI 2026', date: 'TBA', status: 'tbd' }
     ],
     news: [
       { title: 'Website launched', date: '2026-03-03', blurb: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.', pinned: false },
