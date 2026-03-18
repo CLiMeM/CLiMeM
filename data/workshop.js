@@ -174,7 +174,10 @@
     hero: {
       title: 'CLiMeM | MICCAI 2026',
       subtitle: 'Continual Learning in Medical Multimodal-Vision',
-      description: "CLiMeM's first edition workshop. Bridging continual learning and medical multimodal vision for robust, adaptable clinical AI.",
+      description:
+        "CLiMeM (Continual Learning in Medical Multimodal-Vision) is a first-edition workshop at MICCAI 2026 focused on enabling medical AI to learn continuously and safely as clinical environments change. " +
+        "We bring together researchers and practitioners working on continual/lifelong learning, clinician-in-the-loop strategies, and context-aware adaptation using multimodal data—addressing distribution shifts, reliability, and real-world workflow integration. " +
+        "We welcome original methodological advances, benchmark/evaluation protocols, and practical deployment experiences across imaging and clinical systems.",
       ctaPrimary: { label: 'Submit a paper', href: 'call-for-paper.html' },
       ctaSecondary: { label: 'View program', href: 'workshop-program.html' }
     }
