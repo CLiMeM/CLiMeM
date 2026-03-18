@@ -95,7 +95,7 @@
       ]
     },
     submissionGuidelinesSections: [
-      { title: 'Format', paragraphs: ['Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages (same as MICCAI 2025 format). Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'] },
+      { title: 'Format', paragraphs: ['Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages (<a href="https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html#manuscriptpreparation" target="_blank" rel="noopener">(same as MICCAI 2025 format)</a>). Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'] },
       { title: 'Double Blind Review', paragraphs: ['CLiMeM reviewing is double blind. Please review the Anonymity guidelines of MICCAI main conference, and confirm that the author field does not break anonymity.'] },
       { title: 'Paper Submission', paragraphs: ['CLiMeM uses the CMT system for online submission. The submission link will be posted here (TBA).'] },
       { title: 'Supplemental Material', paragraphs: ['Following MICCAI 2026 guidelines for main paper submission, supplemental material is not allowed.'] },
