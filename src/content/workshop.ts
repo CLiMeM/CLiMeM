@@ -422,9 +422,10 @@ export const workshop: Workshop = {
     title: 'CLiMeM | MICCAI 2026',
     subtitle: 'Continual Learning in Medical Multimodal-Vision',
     description:
-      "CLiMeM (Continual Learning in Medical Multimodal-Vision) is a first-edition workshop at MICCAI 2026 focused on enabling medical AI to learn continuously and safely as clinical environments change. " +
-      "We bring together researchers and practitioners working on continual/lifelong learning, clinician-in-the-loop strategies, and context-aware adaptation using multimodal data—addressing distribution shifts, reliability, and real-world workflow integration. " +
-      "We welcome original methodological advances, benchmark/evaluation protocols, and practical deployment experiences across imaging and clinical systems.",
+      "CLiMeM is the inaugural workshop held in conjunction with MICCAI 2026, taking place in Abu Dhabi in October 2026. " +
+      "It focuses on enabling medical AI systems to learn continuously and safely as clinical environments evolve. " +
+      "CLiMeM aims to bridge continual learning and medical multimodal vision to develop robust, physician-in-the-loop, and adaptable clinical AI systems. " +
+      "The workshop addresses key challenges such as distribution shifts, reliability, and integration into real-world clinical workflows.",
     ctaPrimary: { label: 'Submit a paper', href: 'call-for-paper.html' },
     ctaSecondary: { label: 'View program', href: 'workshop-program.html' }
   }
