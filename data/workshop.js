@@ -58,9 +58,9 @@
       ] }
     ],
     importantDates: [
-      { label: 'Paper submission deadline', date: 'TBA', status: 'tbd' },
-      { label: 'Author notification', date: 'TBA', status: 'tbd' },
-      { label: 'Camera-ready deadline', date: 'TBA', status: 'tbd' },
+      { label: 'Paper submission deadline', date: 'July 9th, 2026 (23.59 PDT)', status: 'announced' },
+      { label: 'Author notification', date: 'July 30th, 2026', status: 'announced' },
+      { label: 'Camera-ready deadline', date: 'August 6th, 2026 (23.59 PDT)', status: 'announced' },
       { label: 'In-person workshop @MICCAI 2026', date: 'TBA', status: 'tbd' }
     ],
     news: [
