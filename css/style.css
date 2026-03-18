@@ -119,6 +119,18 @@ a:focus-visible {
   color: inherit;
 }
 
+.site-header-right {
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-miccai-img {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .site-nav ul {
   list-style: none;
   display: flex;

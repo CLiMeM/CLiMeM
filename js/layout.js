@@ -25,7 +25,14 @@
 
   function renderHeader(container) {
     if (!container) return;
-    container.innerHTML = '<a href="index.html" class="site-logo"><img src="images/climem_logo.png" alt="" class="site-logo-img"><span class="site-logo-text">' + escapeHtml(name) + ' ' + escapeHtml(year) + '</span></a>';
+    container.innerHTML =
+      '<a href="index.html" class="site-logo">' +
+      '<img src="images/climem_logo.png" alt="" class="site-logo-img">' +
+      '<span class="site-logo-text">' + escapeHtml(name) + ' ' + escapeHtml(year) + '</span>' +
+      '</a>' +
+      '<div class="site-header-right" aria-label="MICCAI 2026 logo">' +
+      '<img src="images/miccai_logo.png" alt="MICCAI 2026" class="site-miccai-img">' +
+      '</div>';
   }
 
   function renderNav(container) {
