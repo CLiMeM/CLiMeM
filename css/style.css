@@ -87,6 +87,13 @@ a:focus-visible {
   border-bottom: 1px solid var(--gray-200);
 }
 
+.site-header #site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .site-header .container {
   display: flex;
   align-items: center;
@@ -125,7 +132,7 @@ a:focus-visible {
 }
 
 .site-miccai-img {
-  height: 2rem;
+  height: 2.1rem;
   width: auto;
   object-fit: contain;
   display: block;
