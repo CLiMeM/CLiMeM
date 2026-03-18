@@ -225,9 +225,9 @@ export const workshop: Workshop = {
     }
   ],
   importantDates: [
-    { label: 'Paper Submission Deadline', date: 'July 9th, 2026 (23.59 PDT)', status: 'announced' },
+    { label: 'Paper Submission Deadline', date: 'July 9th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'Author Notification', date: 'July 30th, 2026', status: 'announced' },
-    { label: 'Camera-ready Submission Deadline', date: 'August 6th, 2026 (23.59 PDT)', status: 'announced' },
+    { label: 'Camera-ready Submission Deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'In-person Workshop @MICCAI 2026', date: 'TBA', status: 'tbd' }
   ],
   news: [
