@@ -265,7 +265,7 @@ export const workshop: Workshop = {
     {
       title: 'Format',
       paragraphs: [
-        'Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages (<a href="https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html#manuscriptpreparation" target="_blank" rel="noopener">(same as MICCAI 2026 format)</a>). Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'
+        'Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages <a href="https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html#manuscriptpreparation" target="_blank" rel="noopener">(same as MICCAI 2026 format)</a>. Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'
       ]
     },
     {
@@ -283,7 +283,7 @@ export const workshop: Workshop = {
     {
       title: 'Supplemental Material',
       paragraphs: [
-        'Following MICCAI 2026 main conference, supplementary materials are limited to multimedia content (e.g., videos) as warranted by the technical application (e.g., robotics, surgery, ...). These files should not display any proofs, analysis, additional results, or embedded slides, and should not show any identification markers either. Violation of this guideline will lead to desk rejection. PDF files may not be submitted as supplementary materials in 2026 unless authors are citing a paper that has not yet been published. In such a case, authors are required to submit an anonymized version of the cited paper. ACs will perform checks to ensure the integrity. More details are in MICCAI 2026 main website: https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html#supplementarymaterial'
+        'Following MICCAI 2026 main conference, supplementary materials are limited to multimedia content (e.g., videos) as warranted by the technical application (e.g., robotics, surgery, ...). These files should not display any proofs, analysis, additional results, or embedded slides, and should not show any identification markers either. Violation of this guideline will lead to desk rejection. PDF files may not be submitted as supplementary materials in 2026 unless authors are citing a paper that has not yet been published. In such a case, authors are required to submit an anonymized version of the cited paper. ACs will perform checks to ensure the integrity. <a href="https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html#supplementarymaterial" target="_blank" rel="noopener">(More details are in MICCAI 2026 main website)</a>.'
       ]
     },
     {
