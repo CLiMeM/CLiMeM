@@ -64,7 +64,7 @@
       var datesEl = document.getElementById('cfp-dates-list');
       if (datesEl && dates.length) {
         datesEl.innerHTML = dates.map(function (x) {
-          return '<li><span class="date">' + (x.date || 'TBA') + '</span> ' + (x.label || '') + '</li>';
+          return '<li><span class="date">' + (x.date || 'TBA') + '</span><span class="label">' + (x.label || '') + '</span></li>';
         }).join('');
       }
       var leadEl = document.getElementById('cfp-topics-lead');

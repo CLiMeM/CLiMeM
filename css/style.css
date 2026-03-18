@@ -392,10 +392,10 @@ main {
 }
 
 .dates-list li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  align-items: start;
+  column-gap: 1rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--gray-100);
 }
@@ -407,7 +407,11 @@ main {
 .dates-list .date {
   font-weight: 600;
   color: var(--purple-600);
-  min-width: 8rem;
+  white-space: nowrap;
+}
+
+.dates-list .label {
+  color: var(--gray-900);
 }
 
 /* Workshop Program TBA — same style as Call for Paper dates */
@@ -419,6 +423,16 @@ main {
 .dates-list .tz {
   font-size: 0.875rem;
   color: var(--gray-500);
+}
+
+@media (max-width: 768px) {
+  .dates-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .dates-list .date {
+    white-space: normal;
+  }
 }
 
 /* Quick links */
