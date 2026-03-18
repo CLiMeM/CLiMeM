@@ -228,7 +228,7 @@ export const workshop: Workshop = {
     { label: 'Paper Submission Deadline', date: 'July 9th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'Author Notification', date: 'July 30th, 2026', status: 'announced' },
     { label: 'Camera-ready Submission Deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
-    { label: 'In-person Workshop @MICCAI 2026', date: 'TBA', status: 'tbd' }
+    { label: 'In-person Workshop @MICCAI 2026 (October 2026)', date: 'TBA', status: 'tbd' }
   ],
   news: [
     { title: 'Important Dates Updated', date: '2026-03-18', blurb: 'The CLiMeM Workshop Important Dates have been updated. See <a href="call-for-paper.html#cfp-dates-title" target="_blank" rel="noopener">Important Dates</a>.', pinned: false },
