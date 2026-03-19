@@ -278,7 +278,7 @@ export const workshop: Workshop = {
     {
       title: 'Paper Submission',
       paragraphs: [
-        'CLiMeM uses the CMT system for online submission. The submission link will be posted here (TBA).'
+        'CLiMeM will use the OpenReview system for online submission. The submission link will be posted here (TBA).'
       ]
     },
     {
@@ -314,7 +314,7 @@ export const workshop: Workshop = {
         'Each reviewer will be able to cast a score from 1 (lowest) to 5 (highest) and papers with average scores higher than 2.5 will be considered acceptable.',
         'The final decision about acceptance/rejection will be made by the PC member according to ranking, quality and the total number of submissions.',
         'Outstanding papers will be selected for an oral presentation.',
-        'We will select reviewers from a pool of reputable researchers in the field who have repeatedly published at venues such as MICCAI, MIDL, CVPR, ICCV, IPMI, and ECCV. The review process will be implemented through the CMT platform. We will use the same system to match papers to the appropriate reviewers.'
+        'We will select reviewers from a pool of reputable researchers in the field who have repeatedly published at venues such as MICCAI, MIDL, CVPR, ICCV, IPMI, and ECCV. The review process will be implemented through the OpenReview platform. We will use the same system to match papers to the appropriate reviewers.'
       ]
     }
   ],
