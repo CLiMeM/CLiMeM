@@ -61,9 +61,10 @@
       { label: 'Paper submission deadline', date: 'July 9th, 2026 (23:59 PDT)', status: 'announced' },
       { label: 'Author notification', date: 'July 30th, 2026', status: 'announced' },
       { label: 'Camera-ready deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
-      { label: 'In-person workshop @MICCAI 2026 (October 2026)', date: 'TBA', status: 'tbd' }
+      { label: 'MICCAI 2026 Main Conference', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
     ],
     news: [
+      { title: 'MICCAI 2026 Date & Venue Updated', date: '2026-04-13', blurb: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', pinned: true },
       { title: 'Important Dates Updated', date: '2026-03-18', blurb: 'The CLiMeM Workshop Important Dates have been updated. See <a href="call-for-paper.html#cfp-dates-title" target="_blank" rel="noopener">Important Dates</a>.', pinned: false },
       { title: 'Website launched', date: '2026-03-03', blurb: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.', pinned: false },
       { title: 'Workshop accepted', date: '2026-02-07', blurb: 'CLiMeM workshop accepted at MICCAI 2026.', pinned: false }
@@ -135,7 +136,7 @@
     },
     venue: {
       title: 'MICCAI 2026',
-      description: 'CLiMeM will be held in conjunction with MICCAI 2026. Exact date, room, and registration details will be announced when the main conference program is finalized.',
+      description: 'CLiMeM will be held in conjunction with MICCAI 2026 in Strasbourg, France (Sept. 27- Oct. 1, 2026). Exact workshop date, room, and registration details will be announced when the main conference program is finalized.',
       linkLabel: 'MICCAI 2026 website',
       linkHref: 'https://conferences.miccai.org/2026/en/default.asp'
     },
@@ -175,7 +176,7 @@
       title: 'CLiMeM | MICCAI 2026',
       subtitle: 'Continual Learning in Medical Multimodal-Vision',
       description:
-        "CLiMeM is the inaugural workshop held in conjunction with MICCAI 2026, taking place in Abu Dhabi in October 2026. " +
+        "CLiMeM is the inaugural workshop held in conjunction with MICCAI 2026 in Strasbourg, France (Sept. 27- Oct. 1, 2026). " +
         "It focuses on enabling medical AI systems to learn continuously and safely as clinical environments evolve. " +
         "CLiMeM aims to bridge continual learning and medical multimodal vision to develop robust, physician-in-the-loop, and adaptable clinical AI systems. ",
       ctaPrimary: { label: 'Submit a paper', href: 'call-for-paper.html' },

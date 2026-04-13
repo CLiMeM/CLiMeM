@@ -31,7 +31,7 @@ const SITE_CONFIG = {
     { label: 'Paper submission deadline', date: 'TBA', tz: 'AOE' },
     { label: 'Author notification', date: 'TBA', tz: 'AOE' },
     { label: 'Camera-ready deadline', date: 'TBA', tz: 'AOE' },
-    { label: 'Workshop date', date: 'TBA', tz: 'MICCAI 2026' }
+    { label: 'MICCAI 2026 main conference', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', tz: 'Local' }
   ],
 
   quickLinks: [
@@ -100,7 +100,7 @@ const SITE_CONFIG = {
 
   venue: {
     title: 'MICCAI 2026',
-    description: 'CLiMeM will be held in conjunction with MICCAI 2026. Exact date, room, and registration details will be announced when the main conference program is finalized.',
+    description: 'CLiMeM will be held in conjunction with MICCAI 2026 in Strasbourg, France (Sept. 27- Oct. 1, 2026). Exact workshop date, room, and registration details will be announced when the main conference program is finalized.',
     linkLabel: 'MICCAI 2026 website',
     linkHref: 'https://miccai2026.org/',
     placeholders: true
@@ -120,6 +120,7 @@ const SITE_CONFIG = {
 
   /** Preview of latest news for homepage (full list in data/news.json) */
   newsPreview: [
+    { date: '2026-04-13', title: 'MICCAI 2026 Date & Venue Updated', body: 'Strasbourg, France - Sept. 27- Oct. 1, 2026' },
     { date: '2026-02-01', title: 'Website launched', body: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.' },
     { date: '2026-01-15', title: 'Workshop announced', body: 'First edition of CLiMeM will be held at MICCAI 2026. Call for papers and important dates to follow.' }
   ]
