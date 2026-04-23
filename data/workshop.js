@@ -61,7 +61,7 @@
       { label: 'Paper submission deadline', date: 'July 9th, 2026 (23:59 PDT)', status: 'announced' },
       { label: 'Author notification', date: 'July 30th, 2026', status: 'announced' },
       { label: 'Camera-ready deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
-      { label: 'MICCAI 2026 Main Conference', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
+      { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
     ],
     news: [
       { title: 'Invited Speakers Announced', date: '2026-04-23', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },

@@ -31,7 +31,7 @@ const SITE_CONFIG = {
     { label: 'Paper submission deadline', date: 'TBA', tz: 'AOE' },
     { label: 'Author notification', date: 'TBA', tz: 'AOE' },
     { label: 'Camera-ready deadline', date: 'TBA', tz: 'AOE' },
-    { label: 'MICCAI 2026 main conference', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', tz: 'Local' }
+    { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', tz: 'Local' }
   ],
 
   quickLinks: [
