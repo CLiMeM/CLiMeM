@@ -231,7 +231,7 @@ export const workshop: Workshop = {
     { label: 'MICCAI 2026 Main Conference', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
   ],
   news: [
-    { title: 'Invited Speakers Announced', date: '2026-04-13', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },
+    { title: 'Invited Speakers Announced', date: '2026-04-23', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },
     { title: 'MICCAI 2026 Date & Venue Updated', date: '2026-04-13', blurb: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', pinned: true },
     { title: 'Important Dates Updated', date: '2026-03-18', blurb: 'The CLiMeM Workshop Important Dates have been updated. See <a href="call-for-paper.html#cfp-dates-title" target="_blank" rel="noopener">Important Dates</a>.', pinned: false },
     { title: 'Website launched', date: '2026-03-03', blurb: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.', pinned: false },
@@ -246,7 +246,7 @@ export const workshop: Workshop = {
     { time: '12:00 – 12:30', title: 'Contributed papers session 2', type: 'session' },
     { time: '12:30 – 13:00', title: 'Awards & closing', type: 'session' }
   ],
-  programIntro: 'Program schedule and details for MICCAI 2026 will be confirmed closer to the workshop.',
+  programIntro: 'Invited speakers are confirmed. The detailed program schedule for MICCAI 2026 will be announced closer to the workshop.',
   programTimezone: 'All times local (MICCAI 2026).',
   invitedSpeakers: [
     {

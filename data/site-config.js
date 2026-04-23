@@ -58,7 +58,7 @@ const SITE_CONFIG = {
   },
 
   program: {
-    intro: 'Program schedule and details for MICCAI 2026 will be confirmed closer to the workshop.',
+    intro: 'Invited speakers are confirmed. The detailed program schedule for MICCAI 2026 will be announced closer to the workshop.',
     timezone: 'All times local (MICCAI 2026).',
     schedule: [
       { time: '09:00 – 09:15', title: 'Opening & welcome', type: 'session' },
@@ -132,7 +132,7 @@ const SITE_CONFIG = {
 
   /** Preview of latest news for homepage (full list in data/news.json) */
   newsPreview: [
-    { date: '2026-04-13', title: 'Invited Speakers Announced', body: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.' },
+    { date: '2026-04-23', title: 'Invited Speakers Announced', body: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.' },
     { date: '2026-04-13', title: 'MICCAI 2026 Date & Venue Updated', body: 'Strasbourg, France - Sept. 27- Oct. 1, 2026' },
     { date: '2026-02-01', title: 'Website launched', body: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.' },
     { date: '2026-01-15', title: 'Workshop announced', body: 'First edition of CLiMeM will be held at MICCAI 2026. Call for papers and important dates to follow.' }
