@@ -27,7 +27,8 @@
   <main id="main-content">
     <div class="container">
       <h1 class="page-title" id="program-heading"></h1>
-      <p class="page-lead tba-text" id="program-intro">TBA</p>
+      <p class="page-lead" id="program-intro">Program details will be announced soon.</p>
+      <h2 class="section-title" id="invited-speakers-title">Invited Speakers</h2>
       <ul class="invited-speakers-list" id="invited-speakers-list"></ul>
     </div>
   </main>
@@ -48,6 +49,7 @@
       document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Workshop Program';
       var heading = document.getElementById('program-heading'); if (heading) heading.textContent = 'Workshop Program';
       var intro = document.getElementById('program-intro'); if (intro) intro.textContent = w.programIntro || 'Program details will be announced soon.';
+      var speakersTitle = document.getElementById('invited-speakers-title'); if (speakersTitle) speakersTitle.textContent = 'Invited Speakers';
       var speakerList = document.getElementById('invited-speakers-list');
       var speakers = w.invitedSpeakers || [];
       if (speakerList && speakers.length) {

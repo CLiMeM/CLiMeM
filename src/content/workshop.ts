@@ -246,7 +246,7 @@ export const workshop: Workshop = {
     { time: '12:00 – 12:30', title: 'Contributed papers session 2', type: 'session' },
     { time: '12:30 – 13:00', title: 'Awards & closing', type: 'session' }
   ],
-  programIntro: 'Tentative half-day schedule. Invited speakers and exact times will be confirmed closer to the workshop.',
+  programIntro: 'Program schedule and details for MICCAI 2026 will be confirmed closer to the workshop.',
   programTimezone: 'All times local (MICCAI 2026).',
   invitedSpeakers: [
     {
@@ -422,6 +422,7 @@ export const workshop: Workshop = {
     { label: 'Organizers', href: 'organizers.html' },
     { label: 'Awards', href: 'awards.html' },
     { label: 'Venue', href: 'venue.html' },
+    { label: 'News', href: 'news.html' },
     { label: 'Proceedings', href: 'proceedings.html' },
     { label: 'Gallery', href: 'gallery.html' },
     { label: 'FAQ & Contact', href: 'faq-contact.html' }

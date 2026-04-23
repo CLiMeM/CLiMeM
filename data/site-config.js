@@ -58,7 +58,7 @@ const SITE_CONFIG = {
   },
 
   program: {
-    intro: 'Tentative half-day schedule. Invited speakers and exact times will be confirmed closer to the workshop.',
+    intro: 'Program schedule and details for MICCAI 2026 will be confirmed closer to the workshop.',
     timezone: 'All times local (MICCAI 2026).',
     schedule: [
       { time: '09:00 – 09:15', title: 'Opening & welcome', type: 'session' },
