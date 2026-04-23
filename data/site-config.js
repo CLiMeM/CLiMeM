@@ -62,16 +62,28 @@ const SITE_CONFIG = {
     timezone: 'All times local (MICCAI 2026).',
     schedule: [
       { time: '09:00 – 09:15', title: 'Opening & welcome', type: 'session' },
-      { time: '09:15 – 10:00', title: 'Invited talk 1', speaker: 'TBA', type: 'invited' },
+      { time: '09:15 – 10:00', title: 'Invited talk 1', speaker: 'Xiaoxiao Li', type: 'invited' },
       { time: '10:00 – 10:30', title: 'Coffee break', type: 'break' },
       { time: '10:30 – 11:15', title: 'Contributed papers session 1', type: 'session' },
-      { time: '11:15 – 12:00', title: 'Invited talk 2', speaker: 'TBA', type: 'invited' },
+      { time: '11:15 – 12:00', title: 'Invited talk 2', speaker: 'Anirban Mukhopadhyay', type: 'invited' },
       { time: '12:00 – 12:30', title: 'Contributed papers session 2', type: 'session' },
       { time: '12:30 – 13:00', title: 'Awards & closing', type: 'session' }
     ],
     invitedSpeakers: [
-      { name: 'Invited speaker 1', affiliation: 'TBA' },
-      { name: 'Invited speaker 2', affiliation: 'TBA' }
+      {
+        name: 'Xiaoxiao Li',
+        title: 'Associate Professor, Electrical and Computer Engineering; Associate Member, Computer Science, University of British Columbia (UBC)',
+        affiliation: 'University of British Columbia (UBC), Canada',
+        bio: 'A faculty member at the Vector Institute and an adjunct Assistant Professor at the School of Medicine, Yale University. She is a Canada CIFAR AI Chair and a Canada Research Chair (Tier II) in Responsible AI.',
+        photo: 'xiaoxiao.jpg'
+      },
+      {
+        name: 'Anirban Mukhopadhyay',
+        title: 'Leader of the research group Medical & Environmental Computing (MEC-Lab)',
+        affiliation: 'TU Darmstadt, Germany',
+        bio: 'Anirban Mukhopadhyay\'s vision is to Reverse Engineer the Doctor\'s Mind. He leads an independent research group at TU Darmstadt, Germany that develops assistive AI for image-guided diagnosis and surgery. He organizes premier international conferences, challenges and workshops. Dr. Mukhopadhyay is the AI-partner of RACOON, the radiology conglomerate of 38 German University hospitals to combat COVID-19. He hosts the popular podcast "AI-Ready Healthcare".',
+        photo: 'anirban.jpg'
+      }
     ]
   },
 
@@ -120,6 +132,7 @@ const SITE_CONFIG = {
 
   /** Preview of latest news for homepage (full list in data/news.json) */
   newsPreview: [
+    { date: '2026-04-13', title: 'Invited Speakers Announced', body: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.' },
     { date: '2026-04-13', title: 'MICCAI 2026 Date & Venue Updated', body: 'Strasbourg, France - Sept. 27- Oct. 1, 2026' },
     { date: '2026-02-01', title: 'Website launched', body: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.' },
     { date: '2026-01-15', title: 'Workshop announced', body: 'First edition of CLiMeM will be held at MICCAI 2026. Call for papers and important dates to follow.' }

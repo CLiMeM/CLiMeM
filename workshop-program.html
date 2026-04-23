@@ -28,6 +28,7 @@
     <div class="container">
       <h1 class="page-title" id="program-heading"></h1>
       <p class="page-lead tba-text" id="program-intro">TBA</p>
+      <ul class="invited-speakers-list" id="invited-speakers-list"></ul>
     </div>
   </main>
 
@@ -46,7 +47,18 @@
       var w = window.workshop;
       document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Workshop Program';
       var heading = document.getElementById('program-heading'); if (heading) heading.textContent = 'Workshop Program';
-      var intro = document.getElementById('program-intro'); if (intro) intro.textContent = 'TBA';
+      var intro = document.getElementById('program-intro'); if (intro) intro.textContent = w.programIntro || 'Program details will be announced soon.';
+      var speakerList = document.getElementById('invited-speakers-list');
+      var speakers = w.invitedSpeakers || [];
+      if (speakerList && speakers.length) {
+        speakerList.innerHTML = speakers.map(function (s) {
+          var photoHtml = s.photo ? '<div class="invited-speaker-photo"><img src="images/' + s.photo + '" alt="' + (s.name || 'Invited speaker') + '" onerror="this.style.display=\'none\'"></div>' : '';
+          var titleHtml = s.title ? '<div class="invited-speaker-title">' + s.title + '</div>' : '';
+          var affHtml = s.affiliation ? '<div class="invited-speaker-affiliation">' + s.affiliation + '</div>' : '';
+          var bioHtml = s.bio ? '<p class="invited-speaker-bio">' + s.bio + '</p>' : '';
+          return '<li class="invited-speaker-card">' + photoHtml + '<div class="invited-speaker-body"><h2 class="invited-speaker-name">' + (s.name || '') + '</h2>' + titleHtml + affHtml + bioHtml + '</div></li>';
+        }).join('');
+      }
     })();
   </script>
 </body>

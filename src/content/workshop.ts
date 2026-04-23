@@ -111,7 +111,7 @@ export interface Workshop {
   programIntro: string;
   programTimezone: string;
   /** Optional: explicit list for Program page (else derived from tentativeSchedule invited rows) */
-  invitedSpeakers?: { name: string; affiliation: string }[];
+  invitedSpeakers?: { name: string; title?: string; affiliation: string; bio?: string; photo?: string }[];
   submissionGuidelines: SubmissionGuidelines;
   /** Full guidelines for Submission Guidelines page (sections with title + paragraphs) */
   submissionGuidelinesSections?: SubmissionGuidelinesSection[];
@@ -231,6 +231,7 @@ export const workshop: Workshop = {
     { label: 'MICCAI 2026 Main Conference', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
   ],
   news: [
+    { title: 'Invited Speakers Announced', date: '2026-04-13', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },
     { title: 'MICCAI 2026 Date & Venue Updated', date: '2026-04-13', blurb: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', pinned: true },
     { title: 'Important Dates Updated', date: '2026-03-18', blurb: 'The CLiMeM Workshop Important Dates have been updated. See <a href="call-for-paper.html#cfp-dates-title" target="_blank" rel="noopener">Important Dates</a>.', pinned: false },
     { title: 'Website launched', date: '2026-03-03', blurb: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.', pinned: false },
@@ -238,18 +239,30 @@ export const workshop: Workshop = {
   ],
   tentativeSchedule: [
     { time: '09:00 – 09:15', title: 'Opening & welcome', type: 'session' },
-    { time: '09:15 – 10:00', title: 'Invited talk 1', speaker: 'TBA', type: 'invited' },
+    { time: '09:15 – 10:00', title: 'Invited talk 1', speaker: 'Xiaoxiao Li', type: 'invited' },
     { time: '10:00 – 10:30', title: 'Coffee break', type: 'break' },
     { time: '10:30 – 11:15', title: 'Contributed papers session 1', type: 'session' },
-    { time: '11:15 – 12:00', title: 'Invited talk 2', speaker: 'TBA', type: 'invited' },
+    { time: '11:15 – 12:00', title: 'Invited talk 2', speaker: 'Anirban Mukhopadhyay', type: 'invited' },
     { time: '12:00 – 12:30', title: 'Contributed papers session 2', type: 'session' },
     { time: '12:30 – 13:00', title: 'Awards & closing', type: 'session' }
   ],
   programIntro: 'Tentative half-day schedule. Invited speakers and exact times will be confirmed closer to the workshop.',
   programTimezone: 'All times local (MICCAI 2026).',
   invitedSpeakers: [
-    { name: 'Invited speaker 1', affiliation: 'TBA' },
-    { name: 'Invited speaker 2', affiliation: 'TBA' }
+    {
+      name: 'Xiaoxiao Li',
+      title: 'Associate Professor, Electrical and Computer Engineering; Associate Member, Computer Science, University of British Columbia (UBC)',
+      affiliation: 'University of British Columbia (UBC), Canada',
+      bio: 'A faculty member at the Vector Institute and an adjunct Assistant Professor at the School of Medicine, Yale University. She is a Canada CIFAR AI Chair and a Canada Research Chair (Tier II) in Responsible AI.',
+      photo: 'xiaoxiao.jpg'
+    },
+    {
+      name: 'Anirban Mukhopadhyay',
+      title: 'Leader of the research group Medical & Environmental Computing (MEC-Lab)',
+      affiliation: 'TU Darmstadt, Germany',
+      bio: 'Anirban Mukhopadhyay\u2019s vision is to Reverse Engineer the Doctor\u2019s Mind. He leads an independent research group at TU Darmstadt, Germany that develops assistive AI for image-guided diagnosis and surgery. He organizes premier international conferences, challenges and workshops. Dr. Mukhopadhyay is the AI-partner of RACOON, the radiology conglomerate of 38 German University hospitals to combat COVID-19. He hosts the popular podcast \u201cAI-Ready Healthcare\u201d.',
+      photo: 'anirban.jpg'
+    }
   ],
   submissionGuidelines: {
     bullets: [
