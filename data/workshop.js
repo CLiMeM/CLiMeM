@@ -175,7 +175,6 @@
       { label: 'Organizers', href: 'organizers.html' },
       { label: 'Awards', href: 'awards.html' },
       { label: 'Venue', href: 'venue.html' },
-      { label: 'News', href: 'news.html' },
       { label: 'Proceedings', href: 'proceedings.html' },
       { label: 'Gallery', href: 'gallery.html' },
       { label: 'FAQ & Contact', href: 'faq-contact.html' }
