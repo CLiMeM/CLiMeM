@@ -64,6 +64,7 @@
       { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
     ],
     news: [
+      { title: 'Submission Portal Open', date: '2026-04-28', blurb: 'Paper submissions are now open via OpenReview. <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">Submit your paper &rarr;</a>', pinned: true },
       { title: 'Invited Speakers Announced', date: '2026-04-23', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },
       { title: 'MICCAI 2026 Date & Venue Updated', date: '2026-04-13', blurb: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', pinned: true },
       { title: 'Important Dates Updated', date: '2026-03-18', blurb: 'The CLiMeM Workshop Important Dates have been updated. See <a href="call-for-paper.html#cfp-dates-title" target="_blank" rel="noopener">Important Dates</a>.', pinned: false },
@@ -101,7 +102,7 @@
       bullets: [
         'Format: MICCAI LNCS style. Short papers: 4–6 pages; full papers: 8–12 pages (excluding references).',
         'Double-blind: anonymize author names and affiliations.',
-        'Submit via the workshop submission system (link TBA).',
+        'Submit via <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">OpenReview</a>.',
         'Accepted papers will be included in the workshop proceedings (publisher TBA).'
       ],
       formattingRulesPlaceholders: [
@@ -112,7 +113,7 @@
     submissionGuidelinesSections: [
       { title: 'Format', paragraphs: ['Papers will be submitted electronically following Lecture Notes in Computer Science (LNCS) style of up to 8 + 2 pages <a href="https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html#manuscriptpreparation" target="_blank" rel="noopener">(same as MICCAI 2026 format)</a>. Submissions exceeding page limit will be rejected without review. LaTeX style files can be found from Springer, which also contains Word instructions. The file format for submissions is Adobe Portable Document Format (PDF). Other formats will not be accepted.'] },
       { title: 'Double Blind Review', paragraphs: ['CLiMeM reviewing is double blind. Please review the Anonymity guidelines of MICCAI main conference, and confirm that the author field does not break anonymity.'] },
-      { title: 'Paper Submission', paragraphs: ['CLiMeM will use the OpenReview system for online submission. The submission link will be posted here (TBA).'] },
+      { title: 'Paper Submission', paragraphs: ['CLiMeM will use the OpenReview system for online submission. <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">Submit your paper via OpenReview &rarr;</a>'] },
       { title: 'Supplemental Material', paragraphs: ['Following MICCAI 2026 main conference, supplementary materials are limited to multimedia content (e.g., videos) as warranted by the technical application (e.g., robotics, surgery, ...). These files should not display any proofs, analysis, additional results, or embedded slides, and should not show any identification markers either. Violation of this guideline will lead to desk rejection. PDF files may not be submitted as supplementary materials in 2026 unless authors are citing a paper that has not yet been published. In such a case, authors are required to submit an anonymized version of the cited paper. ACs will perform checks to ensure the integrity. <a href="https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html#supplementarymaterial" target="_blank" rel="noopener">(More details are in MICCAI 2026 main website)</a>.'] },
       { title: 'Submission Originality', paragraphs: ['Submissions should be original; no paper of substantially similar content should be under peer review or has been accepted for a publication elsewhere (conference/journal, not including archived work).'] },
       { title: 'Proceedings', paragraphs: ['The proceedings of CLiMeM 2026 will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS).'] },
@@ -192,7 +193,7 @@
         "CLiMeM is the inaugural workshop held in conjunction with MICCAI 2026 in Strasbourg, France (Sept. 27- Oct. 1, 2026). " +
         "It focuses on enabling medical AI systems to learn continuously and safely as clinical environments evolve. " +
         "CLiMeM aims to bridge continual learning and medical multimodal vision to develop robust, physician-in-the-loop, and adaptable clinical AI systems. ",
-      ctaPrimary: { label: 'Submit a paper', href: 'call-for-paper.html' },
+      ctaPrimary: { label: 'Submit a paper', href: 'https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions' },
       ctaSecondary: { label: 'View program', href: 'workshop-program.html' }
     }
   };

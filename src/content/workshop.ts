@@ -231,6 +231,7 @@ export const workshop: Workshop = {
     { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
   ],
   news: [
+    { title: 'Submission Portal Open', date: '2026-04-28', blurb: 'Paper submissions are now open via OpenReview. <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">Submit your paper &rarr;</a>', pinned: true },
     { title: 'Invited Speakers Announced', date: '2026-04-23', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },
     { title: 'MICCAI 2026 Date & Venue Updated', date: '2026-04-13', blurb: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', pinned: true },
     { title: 'Important Dates Updated', date: '2026-03-18', blurb: 'The CLiMeM Workshop Important Dates have been updated. See <a href="call-for-paper.html#cfp-dates-title" target="_blank" rel="noopener">Important Dates</a>.', pinned: false },
@@ -268,7 +269,7 @@ export const workshop: Workshop = {
     bullets: [
       'Format: MICCAI LNCS style. Short papers: 4–6 pages; full papers: 8–12 pages (excluding references).',
       'Double-blind: anonymize author names and affiliations.',
-      'Submit via the workshop submission system (link TBA).',
+      'Submit via <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">OpenReview</a>.',
       'Accepted papers will be included in the workshop proceedings (publisher TBA).'
     ],
     formattingRulesPlaceholders: [
@@ -292,7 +293,7 @@ export const workshop: Workshop = {
     {
       title: 'Paper Submission',
       paragraphs: [
-        'CLiMeM will use the OpenReview system for online submission. The submission link will be posted here (TBA).'
+        'CLiMeM will use the OpenReview system for online submission. <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">Submit your paper via OpenReview &rarr;</a>'
       ]
     },
     {
@@ -439,7 +440,7 @@ export const workshop: Workshop = {
         "CLiMeM is the inaugural workshop held in conjunction with MICCAI 2026 in Strasbourg, France (Sept. 27- Oct. 1, 2026). " +
         "It focuses on enabling medical AI systems to learn continuously and safely as clinical environments evolve. " +
         "CLiMeM aims to bridge continual learning and medical multimodal vision to develop robust, physician-in-the-loop, and adaptable clinical AI systems. ",
-    ctaPrimary: { label: 'Submit a paper', href: 'call-for-paper.html' },
+    ctaPrimary: { label: 'Submit a paper', href: 'https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions' },
     ctaSecondary: { label: 'View program', href: 'workshop-program.html' }
   }
 };
