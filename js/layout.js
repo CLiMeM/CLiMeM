@@ -31,7 +31,7 @@
       '<span class="site-logo-text">' + escapeHtml(name) + ' ' + escapeHtml(year) + '</span>' +
       '</a>' +
       '<div class="site-header-right" aria-label="MICCAI 2026 logo">' +
-      '<img src="images/miccai_logo.png" alt="MICCAI 2026" class="site-miccai-img">' +
+      '<img src="images/miccai_logo_updated.png" alt="MICCAI 2026" class="site-miccai-img">' +
       '</div>';
   }
 
