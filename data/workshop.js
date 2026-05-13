@@ -61,12 +61,14 @@
       { label: 'Paper submission deadline', date: 'July 9th, 2026 (23:59 PDT)', status: 'announced' },
       { label: 'Author notification', date: 'July 30th, 2026', status: 'announced' },
       { label: 'Camera-ready deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
+      { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026', status: 'announced' },
       { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
     ],
     news: [
+      { title: 'Workshop date: Sunday, September 27, 2026', date: '2026-05-13', blurb: 'CLiMeM will take place on Sunday, September 27, 2026, the first day of MICCAI 2026 in Strasbourg, France (conference: Sept. 27–Oct. 1, 2026).', pinned: true },
       { title: 'Submission Portal Open', date: '2026-04-28', blurb: 'Paper submissions are now open via OpenReview. <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">Submit your paper &rarr;</a>', pinned: true },
       { title: 'Invited Speakers Announced', date: '2026-04-23', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },
-      { title: 'MICCAI 2026 Date & Venue Updated', date: '2026-04-13', blurb: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', pinned: true },
+      { title: 'MICCAI 2026 Date & Venue Updated', date: '2026-04-13', blurb: 'Strasbourg, France — MICCAI Sept. 27–Oct. 1, 2026. CLiMeM workshop: Sunday, September 27, 2026.', pinned: true },
       { title: 'Important Dates Updated', date: '2026-03-18', blurb: 'The CLiMeM Workshop Important Dates have been updated. See <a href="call-for-paper.html#cfp-dates-title" target="_blank" rel="noopener">Important Dates</a>.', pinned: false },
       { title: 'Website launched', date: '2026-03-03', blurb: 'Workshop website is live. Check back for program, submission guidelines, and speaker updates.', pinned: false },
       { title: 'Workshop accepted', date: '2026-02-07', blurb: 'CLiMeM workshop accepted at MICCAI 2026.', pinned: false }
@@ -80,7 +82,7 @@
       { time: '12:00 – 12:30', title: 'Contributed papers session 2', type: 'session' },
       { time: '12:30 – 13:00', title: 'Awards & closing', type: 'session' }
     ],
-    programIntro: 'Invited speakers are confirmed. The detailed program schedule for MICCAI 2026 will be announced closer to the workshop.',
+    programIntro: 'Invited speakers are confirmed. CLiMeM will be held on Sunday, September 27, 2026. The detailed session schedule will be announced closer to the workshop.',
     programTimezone: 'All times local (MICCAI 2026).',
     invitedSpeakers: [
       {
@@ -125,7 +127,7 @@
     callForPapers: {
       title: 'Call for Papers',
       intro: [
-        'The CLiMeM Workshop on Continual Learning in Medical Multimodal-Vision, held in conjunction with MICCAI 2026, aims to provide a dedicated forum for discussing methodological advances and practical challenges in developing adaptive medical AI systems capable of learning continuously from evolving clinical environments.',
+        'The CLiMeM Workshop on Continual Learning in Medical Multimodal-Vision, held in conjunction with MICCAI 2026 on Sunday, September 27, 2026 in Strasbourg, France, aims to provide a dedicated forum for discussing methodological advances and practical challenges in developing adaptive medical AI systems capable of learning continuously from evolving clinical environments.',
         'Clinical practice is inherently dynamic. Patient populations shift, imaging protocols evolve, hardware systems change, and diagnostic workflows continuously adapt. In contrast, most medical AI models are trained under static assumptions and remain fixed after deployment, leading to performance degradation under distribution shifts and changing clinical conditions.',
         'CLiMeM focuses on continual, adaptive, and clinician-integrated learning paradigms that enable medical AI systems to evolve safely over time while maintaining robustness, reliability, and clinical relevance.',
         'We invite original research contributions addressing continual learning, multimodal medical AI, and adaptive clinical intelligence. Submissions may include methodological innovations, system designs, benchmark studies, or clinical deployment experiences.'
@@ -151,14 +153,14 @@
     },
     venue: {
       title: 'MICCAI 2026',
-      description: 'CLiMeM will be held in conjunction with MICCAI 2026 in Strasbourg, France (Sept. 27- Oct. 1, 2026). Exact workshop date, room, and registration details will be announced when the main conference program is finalized.',
+      description: 'CLiMeM will be held on Sunday, September 27, 2026, in Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room assignment and registration follow the main conference program.',
       linkLabel: 'MICCAI 2026 website',
       linkHref: 'https://conferences.miccai.org/2026/en/default.asp'
     },
     proceedingsPageIntro: 'All proceedings will be listed below. This is the first edition of CLiMeM; once the workshop has taken place, accepted papers will appear here.',
     galleryPlaceholderLabel: 'CLiMeM | MICCAI 2026',
     faq: [
-      { q: 'What is the workshop format?', a: 'TBA' },
+      { q: 'What is the workshop format?', a: 'Half-day workshop on Sunday, September 27, 2026, with invited talks and contributed paper sessions. Final room and timing details will follow the MICCAI 2026 program.' },
       { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
       { q: 'Will workshop papers be published?', a: 'Yes. Accepted papers will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS), in the same series as other MICCAI satellite events.' },
       { q: 'Can I submit work also submitted elsewhere?', a: 'No. Submissions must be original. No paper of substantially similar content should be under peer review or have been accepted for publication elsewhere (conference or journal). Dual submission policies follow MICCAI guidelines.' },
@@ -191,7 +193,7 @@
       title: 'CLiMeM | MICCAI 2026',
       subtitle: 'Continual Learning in Medical Multimodal-Vision',
       description:
-        "CLiMeM is the inaugural workshop held in conjunction with MICCAI 2026 in Strasbourg, France (Sept. 27- Oct. 1, 2026). " +
+        "CLiMeM is the inaugural workshop at MICCAI 2026 in Strasbourg, France on Sunday, September 27, 2026 (MICCAI: Sept. 27–Oct. 1, 2026). " +
         "It focuses on enabling medical AI systems to learn continuously and safely as clinical environments evolve. " +
         "CLiMeM aims to bridge continual learning and medical multimodal vision to develop robust, physician-in-the-loop, and adaptable clinical AI systems. ",
       ctaPrimary: { label: 'Submit a paper', href: 'https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions' },
