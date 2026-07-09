@@ -58,13 +58,14 @@
       ] }
     ],
     importantDates: [
-      { label: 'Paper submission deadline', date: 'July 9th, 2026 (23:59 PDT)', status: 'announced' },
+      { label: 'Paper submission deadline', date: 'July 16th, 2026 (23:59 PDT)', status: 'announced' },
       { label: 'Author notification', date: 'July 30th, 2026', status: 'announced' },
       { label: 'Camera-ready deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
       { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026', status: 'announced' },
       { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
     ],
     news: [
+      { title: 'Submission deadline extended to July 16, 2026', date: '2026-07-09', blurb: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">OpenReview</a>. See <a href="call-for-paper.html#cfp-dates-title">Important Dates</a>.', pinned: true },
       { title: 'Workshop date: Sunday, September 27, 2026', date: '2026-05-13', blurb: 'CLiMeM will take place on Sunday, September 27, 2026, the first day of MICCAI 2026 in Strasbourg, France (conference: Sept. 27–Oct. 1, 2026).', pinned: true },
       { title: 'Submission Portal Open', date: '2026-04-28', blurb: 'Paper submissions are now open via OpenReview. <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">Submit your paper &rarr;</a>', pinned: true },
       { title: 'Invited Speakers Announced', date: '2026-04-23', blurb: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.', pinned: true },

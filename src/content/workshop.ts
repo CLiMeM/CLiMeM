@@ -225,13 +225,19 @@ export const workshop: Workshop = {
     }
   ],
   importantDates: [
-    { label: 'Paper Submission Deadline', date: 'July 9th, 2026 (23:59 PDT)', status: 'announced' },
+    { label: 'Paper Submission Deadline', date: 'July 16th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'Author Notification', date: 'July 30th, 2026', status: 'announced' },
     { label: 'Camera-ready Submission Deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026', status: 'announced' },
     { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
   ],
   news: [
+    {
+      title: 'Submission deadline extended to July 16, 2026',
+      date: '2026-07-09',
+      blurb: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">OpenReview</a>. See <a href="call-for-paper.html#cfp-dates-title">Important Dates</a>.',
+      pinned: true
+    },
     {
       title: 'Workshop date: Sunday, September 27, 2026',
       date: '2026-05-13',

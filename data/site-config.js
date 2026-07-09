@@ -28,7 +28,7 @@ const SITE_CONFIG = {
   },
 
   importantDates: [
-    { label: 'Paper submission deadline', date: 'TBA', tz: 'AOE' },
+    { label: 'Paper submission deadline', date: 'July 16th, 2026 (23:59 PDT)', tz: 'PDT' },
     { label: 'Author notification', date: 'TBA', tz: 'AOE' },
     { label: 'Camera-ready deadline', date: 'TBA', tz: 'AOE' },
     { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026', tz: 'Local' },
@@ -133,6 +133,7 @@ const SITE_CONFIG = {
 
   /** Preview of latest news for homepage (full list in data/news.json) */
   newsPreview: [
+    { date: '2026-07-09', title: 'Submission deadline extended to July 16, 2026', body: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via OpenReview. See Important Dates on the Call for Paper page.' },
     { date: '2026-05-13', title: 'Workshop date: Sunday, September 27, 2026', body: 'CLiMeM will take place on Sunday, September 27, 2026, the first day of MICCAI 2026 in Strasbourg, France (conference: Sept. 27–Oct. 1, 2026).' },
     { date: '2026-04-23', title: 'Invited Speakers Announced', body: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.' },
     { date: '2026-04-13', title: 'MICCAI 2026 Date & Venue Updated', body: 'Strasbourg, France — MICCAI Sept. 27–Oct. 1, 2026. CLiMeM workshop: Sunday, September 27, 2026.' },
