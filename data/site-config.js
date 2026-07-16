@@ -32,7 +32,7 @@ const SITE_CONFIG = {
     { label: 'Author notification', date: 'TBA', tz: 'AOE' },
     { label: 'Camera-ready deadline', date: 'TBA', tz: 'AOE' },
     { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026 · 8:00 AM–12:30 PM · Bruxelles (G)', tz: 'Local' },
-    { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', tz: 'Local' }
+    { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg Convention Center, Strasbourg, France - Sept. 27- Oct. 1, 2026', tz: 'Local' }
   ],
 
   quickLinks: [
@@ -113,7 +113,7 @@ const SITE_CONFIG = {
 
   venue: {
     title: 'MICCAI 2026',
-    description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, in Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Bruxelles (G). Registration follows the main conference program.',
+    description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, at Strasbourg Convention Center, Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Bruxelles (G). Registration follows the main conference program.',
     linkLabel: 'MICCAI 2026 website',
     linkHref: 'https://miccai2026.org/',
     placeholders: true
@@ -133,7 +133,7 @@ const SITE_CONFIG = {
 
   /** Preview of latest news for homepage (full list in data/news.json) */
   newsPreview: [
-    { date: '2026-07-15', title: 'Workshop schedule: Sept 27, Bruxelles (G)', body: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G). See the MICCAI 2026 Satellite Events tentative schedule (PDF).' },
+    { date: '2026-07-15', title: 'Workshop schedule: Sept 27, Bruxelles (G)', body: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), Strasbourg Convention Center, Strasbourg, France. See the MICCAI 2026 Satellite Events tentative schedule (PDF).' },
     { date: '2026-07-09', title: 'Submission deadline extended to July 16, 2026', body: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via OpenReview. See Important Dates on the Call for Paper page.' },
     { date: '2026-05-13', title: 'Workshop date: Sunday, September 27, 2026', body: 'CLiMeM will take place on Sunday, September 27, 2026, the first day of MICCAI 2026 in Strasbourg, France (conference: Sept. 27–Oct. 1, 2026).' },
     { date: '2026-04-23', title: 'Invited Speakers Announced', body: 'Meet our invited speakers: Xiaoxiao Li (UBC) and Anirban Mukhopadhyay (TU Darmstadt). Visit the Workshop Program page for bios.' },

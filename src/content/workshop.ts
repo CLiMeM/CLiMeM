@@ -232,13 +232,13 @@ export const workshop: Workshop = {
     { label: 'Author Notification', date: 'July 30th, 2026', status: 'announced' },
     { label: 'Camera-ready Submission Deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026 · 8:00 AM–12:30 PM · Bruxelles (G)', status: 'announced' },
-    { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
+    { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg Convention Center, Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
   ],
   news: [
     {
       title: 'Workshop schedule: Sept 27, Bruxelles (G)',
       date: '2026-07-15',
-      blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G). See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.',
+      blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.',
       pinned: true
     },
     {
@@ -269,7 +269,7 @@ export const workshop: Workshop = {
     { time: '12:00 – 12:30', title: 'Contributed papers session 2', type: 'session' },
     { time: '12:30 – 13:00', title: 'Awards & closing', type: 'session' }
   ],
-  programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Bruxelles (G)</strong>, Strasbourg, France. Invited speakers are confirmed; detailed session timing will be announced closer to the workshop. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a> for the official MICCAI satellite program.',
+  programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Bruxelles (G)</strong>, Strasbourg Convention Center, Strasbourg, France. Invited speakers are confirmed; detailed session timing will be announced closer to the workshop. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a> for the official MICCAI satellite program.',
   programTimezone: 'All times local (MICCAI 2026).',
   invitedSpeakers: [
     {
@@ -365,7 +365,7 @@ export const workshop: Workshop = {
   callForPapers: {
     title: 'Call for Papers',
     intro: [
-      'The CLiMeM Workshop on Continual Learning in Medical Multimodal-Vision, held in conjunction with MICCAI 2026 on Sunday, September 27, 2026 in Strasbourg, France, aims to provide a dedicated forum for discussing methodological advances and practical challenges in developing adaptive medical AI systems capable of learning continuously from evolving clinical environments.',
+      'The CLiMeM Workshop on Continual Learning in Medical Multimodal-Vision, held in conjunction with MICCAI 2026 on Sunday, September 27, 2026 at Strasbourg Convention Center, Strasbourg, France, aims to provide a dedicated forum for discussing methodological advances and practical challenges in developing adaptive medical AI systems capable of learning continuously from evolving clinical environments.',
       'Clinical practice is inherently dynamic. Patient populations shift, imaging protocols evolve, hardware systems change, and diagnostic workflows continuously adapt. In contrast, most medical AI models are trained under static assumptions and remain fixed after deployment, leading to performance degradation under distribution shifts and changing clinical conditions.',
       'CLiMeM focuses on continual, adaptive, and clinician-integrated learning paradigms that enable medical AI systems to evolve safely over time while maintaining robustness, reliability, and clinical relevance.',
       'We invite original research contributions addressing continual learning, multimodal medical AI, and adaptive clinical intelligence. Submissions may include methodological innovations, system designs, benchmark studies, or clinical deployment experiences.'
@@ -425,7 +425,7 @@ export const workshop: Workshop = {
   },
   venue: {
     title: 'MICCAI 2026',
-    description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, in Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Bruxelles (G). Registration follows the main conference program.',
+    description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, at Strasbourg Convention Center, Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Bruxelles (G). Registration follows the main conference program.',
     linkLabel: 'MICCAI 2026 website',
     linkHref: 'https://conferences.miccai.org/2026/en/default.asp',
     scheduleLinkLabel: 'MICCAI 2026 Satellite Events — Tentative Schedule (PDF)',
@@ -467,7 +467,7 @@ export const workshop: Workshop = {
     title: 'CLiMeM | MICCAI 2026',
     subtitle: 'Continual Learning in Medical Multimodal-Vision',
     description:
-        "CLiMeM is the inaugural workshop at MICCAI 2026 in Strasbourg, France on Sunday, September 27, 2026 (MICCAI: Sept. 27–Oct. 1, 2026). " +
+        "CLiMeM is the inaugural workshop at MICCAI 2026 at Strasbourg Convention Center, Strasbourg, France on Sunday, September 27, 2026 (MICCAI: Sept. 27–Oct. 1, 2026). " +
         "It focuses on enabling medical AI systems to learn continuously and safely as clinical environments evolve. " +
         "CLiMeM aims to bridge continual learning and medical multimodal vision to develop robust, physician-in-the-loop, and adaptable clinical AI systems. ",
     ctaPrimary: { label: 'Submit a paper', href: 'https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions' },
