@@ -50,8 +50,15 @@
       var title = document.getElementById('venue-title'); if (title) title.textContent = v.title || 'Venue';
       var desc = document.getElementById('venue-desc'); if (desc) desc.textContent = v.description || '';
       var linkWrap = document.getElementById('venue-link-wrap');
-      if (linkWrap && v.linkHref) {
-        linkWrap.innerHTML = '<a href="' + v.linkHref + '" class="btn btn-primary" target="_blank" rel="noopener">' + (v.linkLabel || 'Conference website') + '</a>';
+      if (linkWrap) {
+        var links = '';
+        if (v.linkHref) {
+          links += '<a href="' + v.linkHref + '" class="btn btn-primary" target="_blank" rel="noopener">' + (v.linkLabel || 'Conference website') + '</a>';
+        }
+        if (v.scheduleLinkHref) {
+          links += (links ? ' ' : '') + '<a href="' + v.scheduleLinkHref + '" class="btn btn-secondary" target="_blank" rel="noopener">' + (v.scheduleLinkLabel || 'Satellite events schedule (PDF)') + '</a>';
+        }
+        if (links) linkWrap.innerHTML = links;
       }
     })();
   </script>
