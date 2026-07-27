@@ -229,7 +229,7 @@ export const workshop: Workshop = {
   ],
   importantDates: [
     { label: 'Paper Submission Deadline', date: 'July 16th, 2026 (23:59 PDT)', status: 'announced' },
-    { label: 'Author Notification', date: 'July 30th, 2026', status: 'announced' },
+    { label: 'Author Notification', date: 'August 1st, 2026', status: 'announced' },
     { label: 'Camera-ready Submission Deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026 · 8:00 AM–12:30 PM · Bruxelles (G)', status: 'announced' },
     { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg Convention Center, Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
