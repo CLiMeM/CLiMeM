@@ -65,6 +65,7 @@
       { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg Convention Center, Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
     ],
     news: [
+      { title: 'Decisions are out!', date: '2026-07-31', blurb: 'Thank you to all submitted papers and congratulations to all the accepted ones!', pinned: true },
       { title: 'Workshop schedule: Sept 27, Bruxelles (G)', date: '2026-07-15', blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.', pinned: true },
       { title: 'Submission deadline extended to July 16, 2026', date: '2026-07-09', blurb: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">OpenReview</a>. See <a href="call-for-paper.html#cfp-dates-title">Important Dates</a>.', pinned: true },
       { title: 'Workshop date: Sunday, September 27, 2026', date: '2026-05-13', blurb: 'CLiMeM will take place on Sunday, September 27, 2026, the first day of MICCAI 2026 in Strasbourg, France (conference: Sept. 27–Oct. 1, 2026).', pinned: true },

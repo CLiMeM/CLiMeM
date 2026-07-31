@@ -133,6 +133,7 @@ const SITE_CONFIG = {
 
   /** Preview of latest news for homepage (full list in data/news.json) */
   newsPreview: [
+    { date: '2026-07-31', title: 'Decisions are out!', body: 'Thank you to all submitted papers and congratulations to all the accepted ones!' },
     { date: '2026-07-15', title: 'Workshop schedule: Sept 27, Bruxelles (G)', body: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), Strasbourg Convention Center, Strasbourg, France. See the MICCAI 2026 Satellite Events tentative schedule (PDF).' },
     { date: '2026-07-09', title: 'Submission deadline extended to July 16, 2026', body: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via OpenReview. See Important Dates on the Call for Paper page.' },
     { date: '2026-05-13', title: 'Workshop date: Sunday, September 27, 2026', body: 'CLiMeM will take place on Sunday, September 27, 2026, the first day of MICCAI 2026 in Strasbourg, France (conference: Sept. 27–Oct. 1, 2026).' },

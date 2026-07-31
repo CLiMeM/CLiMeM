@@ -236,6 +236,12 @@ export const workshop: Workshop = {
   ],
   news: [
     {
+      title: 'Decisions are out!',
+      date: '2026-07-31',
+      blurb: 'Thank you to all submitted papers and congratulations to all the accepted ones!',
+      pinned: true
+    },
+    {
       title: 'Workshop schedule: Sept 27, Bruxelles (G)',
       date: '2026-07-15',
       blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.',
