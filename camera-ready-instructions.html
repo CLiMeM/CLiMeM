@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Camera-ready Instructions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body data-page="camera-ready-instructions">
+  <header class="site-header">
+    <div class="container">
+      <div id="site-header-inner"></div>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-inner">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="site-nav-inner"></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="container">
+      <h1 class="page-title" id="cr-heading"></h1>
+      <p class="page-lead" id="cr-lead"></p>
+      <p class="camera-ready-deadline" id="cr-deadline"></p>
+      <p class="camera-ready-intro" id="cr-intro"></p>
+
+      <section class="section camera-ready-checklist-section" aria-labelledby="cr-checklist-title">
+        <h2 class="section-title" id="cr-checklist-title"></h2>
+        <ul class="camera-ready-checklist" id="cr-checklist"></ul>
+      </section>
+
+      <div id="cr-steps"></div>
+
+      <section class="section camera-ready-registration guidelines-section" aria-labelledby="cr-registration-title">
+        <h2 class="section-title" id="cr-registration-title"></h2>
+        <p class="guidelines-para" id="cr-registration-note"></p>
+      </section>
+
+      <p class="camera-ready-closing" id="cr-closing"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div id="site-footer-inner"></div>
+    </div>
+  </footer>
+
+  <script src="data/workshop.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      if (typeof window.workshop === 'undefined') return;
+      var w = window.workshop;
+      var cr = w.cameraReadyInstructions;
+      if (!cr) return;
+
+      document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Camera-ready Instructions';
+
+      var heading = document.getElementById('cr-heading');
+      if (heading) heading.textContent = cr.pageTitle || 'Camera-Ready Instructions for Authors';
+
+      var lead = document.getElementById('cr-lead');
+      if (lead) lead.textContent = cr.lead || '';
+
+      var deadline = document.getElementById('cr-deadline');
+      if (deadline && cr.deadline) {
+        deadline.innerHTML = '<strong>Deadline:</strong> ' + cr.deadline;
+      }
+
+      var intro = document.getElementById('cr-intro');
+      if (intro) intro.textContent = cr.intro || '';
+
+      var checklistTitle = document.getElementById('cr-checklist-title');
+      if (checklistTitle) checklistTitle.textContent = cr.checklistTitle || 'Quick checklist';
+
+      var checklist = document.getElementById('cr-checklist');
+      if (checklist && cr.checklist && cr.checklist.length) {
+        checklist.innerHTML = cr.checklist.map(function (item) {
+          return '<li><span class="camera-ready-check" aria-hidden="true"></span><span>' + item + '</span></li>';
+        }).join('');
+      }
+
+      var stepsContainer = document.getElementById('cr-steps');
+      if (stepsContainer && cr.steps && cr.steps.length) {
+        stepsContainer.innerHTML = cr.steps.map(function (step) {
+          var items = (step.items || []).map(function (item) {
+            return '<li>' + item + '</li>';
+          }).join('');
+          return '<section class="section guidelines-section camera-ready-step"><h2 class="section-title">' + (step.title || '') + '</h2><ul class="camera-ready-step-list">' + items + '</ul></section>';
+        }).join('');
+      }
+
+      var regTitle = document.getElementById('cr-registration-title');
+      if (regTitle) regTitle.textContent = cr.registrationTitle || 'Registration reminder';
+
+      var regNote = document.getElementById('cr-registration-note');
+      if (regNote) regNote.textContent = cr.registrationNote || '';
+
+      var closing = document.getElementById('cr-closing');
+      if (closing && cr.closing) {
+        var email = cr.contactEmail || '';
+        closing.innerHTML = cr.closing + (email ? ' <a href="mailto:' + email + '">' + email + '</a>.' : '.');
+      }
+    })();
+  </script>
+</body>
+</html>

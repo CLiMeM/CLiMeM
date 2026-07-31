@@ -54,6 +54,27 @@ export interface SubmissionGuidelinesSection {
   paragraphs: string[];
 }
 
+export interface CameraReadyStep {
+  title: string;
+  items: string[];
+}
+
+export interface CameraReadyInstructions {
+  pageTitle: string;
+  lead: string;
+  deadline: string;
+  intro: string;
+  checklistTitle: string;
+  checklist: string[];
+  steps: CameraReadyStep[];
+  registrationTitle: string;
+  registrationNote: string;
+  closing: string;
+  contactEmail: string;
+  licenseFormFile: string;
+  openReviewGroupUrl: string;
+}
+
 export interface CallForPapersTopicGroup {
   title: string;
   items: string[];
@@ -118,6 +139,8 @@ export interface Workshop {
   submissionGuidelines: SubmissionGuidelines;
   /** Full guidelines for Submission Guidelines page (sections with title + paragraphs) */
   submissionGuidelinesSections?: SubmissionGuidelinesSection[];
+  /** Camera-ready instructions for accepted authors */
+  cameraReadyInstructions?: CameraReadyInstructions;
   submissionIntro: string;
   reviewProcess: string;
   proceedings: string;
@@ -367,6 +390,56 @@ export const workshop: Workshop = {
       ]
     }
   ],
+  cameraReadyInstructions: {
+    pageTitle: 'Camera-Ready Instructions for Authors',
+    lead: 'Steps to finalize your accepted CLiMeM 2026 paper for the proceedings.',
+    deadline: 'August 6, 2026, 23:59 PDT',
+    intro: 'Congratulations again on your acceptance to CLiMeM 2026! Please follow the steps below carefully to finalize your submission for the proceedings.',
+    checklistTitle: 'Quick checklist',
+    checklist: [
+      'Prepare your camera-ready PDF (<code>CameraReady-&lt;papernumber&gt;.pdf</code>)',
+      'Complete, sign, and scan the License to Publish form (<code>LicenseToPublish-&lt;papernumber&gt;.pdf</code>)',
+      'Upload both files on OpenReview (Camera Ready Revision)',
+      'Ensure at least one author is registered for MICCAI 2026 and will present in Strasbourg'
+    ],
+    steps: [
+      {
+        title: '1. Prepare your camera-ready PDF',
+        items: [
+          'Incorporate feedback from your reviewers where applicable.',
+          'Your main body may now extend up to <strong>8.5 pages</strong> (previously 8), plus up to <strong>2 pages for references</strong> (unchanged).',
+          'Keep the same MICCAI main conference paper format you used for your original submission.',
+          'Save your final paper as: <code>CameraReady-&lt;papernumber&gt;.pdf</code> (e.g., <code>CameraReady-13.pdf</code>).'
+        ]
+      },
+      {
+        title: '2. Complete and sign the License to Publish form',
+        items: [
+          'Download the <a href="SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland.docx">License to Publish form</a>.',
+          'Fill in: paper title, full author list, and corresponding author.',
+          'Print and sign the form by hand (wet-ink signature), then scan or photograph it and convert it to PDF.',
+          'Save it as: <code>LicenseToPublish-&lt;papernumber&gt;.pdf</code> (e.g., <code>LicenseToPublish-13.pdf</code>).'
+        ]
+      },
+      {
+        title: '3. Upload both files on OpenReview',
+        items: [
+          'Log in to <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM" target="_blank" rel="noopener">OpenReview</a> and go to your paper\'s page.',
+          'Click the blue <strong>Edit</strong> button in the top right corner.',
+          'From the dropdown, select <strong>Camera Ready Revision</strong>.',
+          'Upload your camera-ready PDF in the paper file field.',
+          'Upload your signed License to Publish form (PDF) in the designated field.',
+          'Click <strong>Submit</strong>.'
+        ]
+      }
+    ],
+    registrationTitle: '4. Registration reminder',
+    registrationNote: 'At least one author must register for MICCAI 2026 and present the work in person in Strasbourg. Papers without a registered, presenting author may not appear in the final proceedings.',
+    closing: 'Please complete all steps above by the deadline. If you have any questions, contact us at',
+    contactEmail: 'nbayasi@bccrc.ca',
+    licenseFormFile: 'SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland.docx',
+    openReviewGroupUrl: 'https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM'
+  },
   submissionIntro: 'We invite short and full papers on continual learning, multimodal learning, and medical vision. Submissions will be peer-reviewed.',
   callForPapers: {
     title: 'Call for Papers',
@@ -455,6 +528,7 @@ export const workshop: Workshop = {
     { label: 'Home', href: 'index.html' },
     { label: 'Call for Paper', href: 'call-for-paper.html' },
     { label: 'Submission Guidelines', href: 'submission-guidelines.html' },
+    { label: 'Camera-ready Instructions', href: 'camera-ready-instructions.html' },
     { label: 'Workshop Program', href: 'workshop-program.html' },
     { label: 'Organizers', href: 'organizers.html' },
     { label: 'Awards', href: 'awards.html' },
@@ -465,6 +539,7 @@ export const workshop: Workshop = {
   ],
   quickLinks: [
     { label: 'Submission guidelines', href: 'submission-guidelines.html' },
+    { label: 'Camera-ready instructions', href: 'camera-ready-instructions.html' },
     { label: 'Program & schedule', href: 'workshop-program.html' },
     { label: 'Organizers', href: 'organizers.html' },
     { label: 'MICCAI 2026', href: 'venue.html' }
