@@ -135,13 +135,13 @@
       checklist: [
         'Prepare your camera-ready PDF (<code>CameraReady-&lt;papernumber&gt;.pdf</code>)',
         'Complete, sign, and scan the License to Publish form (<code>LicenseToPublish-&lt;papernumber&gt;.pdf</code>)',
-        'Upload both files on OpenReview (Camera Ready Revision)',
+        'Upload both files on OpenReview (camera-ready)',
         'Ensure at least one author is registered for MICCAI 2026 and will present in Strasbourg'
       ],
       steps: [
         { title: '1. Prepare your camera-ready PDF', items: ['Incorporate feedback from your reviewers where applicable.', 'Your main body may now extend up to <strong>8.5 pages</strong> (previously 8), plus up to <strong>2 pages for references</strong> (unchanged).', 'Keep the same MICCAI main conference paper format you used for your original submission.', 'Save your final paper as: <code>CameraReady-&lt;papernumber&gt;.pdf</code> (e.g., <code>CameraReady-13.pdf</code>).'] },
         { title: '2. Complete and sign the License to Publish form', items: ['Download the <a href="SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland.docx">License to Publish form</a>.', 'Fill in: paper title, full author list, and corresponding author.', 'Print and sign the form by hand (wet-ink signature), then scan or photograph it and convert it to PDF.', 'Save it as: <code>LicenseToPublish-&lt;papernumber&gt;.pdf</code> (e.g., <code>LicenseToPublish-13.pdf</code>).'] },
-        { title: '3. Upload both files on OpenReview', items: ['Log in to <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM" target="_blank" rel="noopener">OpenReview</a> and go to your paper\'s page.', 'Click the blue <strong>Edit</strong> button in the top right corner.', 'From the dropdown, select <strong>Camera Ready Revision</strong>.', 'Upload your camera-ready PDF in the paper file field.', 'Upload your signed License to Publish form (PDF) in the designated field.', 'Click <strong>Submit</strong>.'] }
+        { title: '3. Upload both files on OpenReview', items: ['Log in to <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM" target="_blank" rel="noopener">OpenReview</a> and go to your paper\'s page.', 'Click the blue <strong>Edit</strong> button in the top right corner.', 'From the dropdown, select <strong>camera-ready</strong>.', 'Upload your camera-ready PDF in the paper file field.', 'Upload your signed License to Publish form (PDF) in the designated field.', 'Click <strong>Submit</strong>.'] }
       ],
       registrationTitle: '4. Registration reminder',
       registrationNote: 'At least one author must register for MICCAI 2026 and present the work in person in Strasbourg. Papers without a registered, presenting author may not appear in the final proceedings.',

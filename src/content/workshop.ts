@@ -399,7 +399,7 @@ export const workshop: Workshop = {
     checklist: [
       'Prepare your camera-ready PDF (<code>CameraReady-&lt;papernumber&gt;.pdf</code>)',
       'Complete, sign, and scan the License to Publish form (<code>LicenseToPublish-&lt;papernumber&gt;.pdf</code>)',
-      'Upload both files on OpenReview (Camera Ready Revision)',
+      'Upload both files on OpenReview (camera-ready)',
       'Ensure at least one author is registered for MICCAI 2026 and will present in Strasbourg'
     ],
     steps: [
@@ -426,7 +426,7 @@ export const workshop: Workshop = {
         items: [
           'Log in to <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM" target="_blank" rel="noopener">OpenReview</a> and go to your paper\'s page.',
           'Click the blue <strong>Edit</strong> button in the top right corner.',
-          'From the dropdown, select <strong>Camera Ready Revision</strong>.',
+          'From the dropdown, select <strong>camera-ready</strong>.',
           'Upload your camera-ready PDF in the paper file field.',
           'Upload your signed License to Publish form (PDF) in the designated field.',
           'Click <strong>Submit</strong>.'
