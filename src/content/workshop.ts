@@ -395,11 +395,11 @@ export const workshop: Workshop = {
     intro: 'Congratulations again on your acceptance to CLiMeM 2026! Please follow the steps below carefully to finalize your submission for the proceedings.',
     checklistTitle: 'Quick checklist',
     checklist: [
-      'Prepare your camera-ready PDF (<code>CLiMeM_XXX.pdf</code>), source files, and supplementary PDF if applicable',
-      'Complete, sign, and scan the License to Publish form (<code>CLiMeM_XXX_LTP.pdf</code>)',
+      '<span class="camera-ready-new">NEW</span> Prepare your camera-ready PDF (<code>CLiMeM_XXX.pdf</code>), source files, and supplementary PDF if applicable',
+      '<span class="camera-ready-new">NEW</span> Complete, sign, and scan the License to Publish form (<code>CLiMeM_XXX_LTP.pdf</code>)',
       'Upload files on OpenReview (camera-ready)',
       'Ensure at least one author is registered for MICCAI 2026 and will present in Strasbourg',
-      'Review the patent notice and Springer Code of Conduct below'
+      '<span class="camera-ready-new">NEW</span> Review the patent notice and Springer Code of Conduct below'
     ],
     steps: [
       {
@@ -408,9 +408,9 @@ export const workshop: Workshop = {
           'Incorporate feedback from your reviewers where applicable.',
           'Your main body may now extend up to <strong>8.5 pages</strong> (previously 8), plus up to <strong>2 pages for references</strong> (unchanged).',
           'Keep the same MICCAI main conference paper format you used for your original submission.',
-          'Save your final paper as: <code>CLiMeM_XXX.pdf</code> (where <code>XXX</code> is your paper ID, e.g., <code>CLiMeM_013.pdf</code>).',
-          'If you have supplementary material, save it as a single PDF named <code>CLiMeM_XXX_supp.pdf</code>.',
-          'Also prepare your manuscript source files:',
+          '<span class="camera-ready-new">NEW</span> Save your final paper as: <code>CLiMeM_XXX.pdf</code> (where <code>XXX</code> is your paper ID, e.g., <code>CLiMeM_013.pdf</code>).',
+          '<span class="camera-ready-new">NEW</span> If you have supplementary material, save it as a single PDF named <code>CLiMeM_XXX_supp.pdf</code>.',
+          '<span class="camera-ready-new">NEW</span> Also prepare your manuscript source files:',
           '<strong>LaTeX:</strong> a zipped file with all .tex files, figures, .bib file, and any non-standard style files/fonts, named <code>CLiMeM_XXX_source.zip</code>',
           '<strong>Word:</strong> the source .docx file, named <code>CLiMeM_XXX_source.docx</code>'
         ]
@@ -421,7 +421,7 @@ export const workshop: Workshop = {
           'Download the <a href="SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland.docx">License to Publish form</a>.',
           'Fill in: paper title, full author list, and corresponding author. <strong>Do not edit any pre-filled fields.</strong>',
           'Print and sign the form by hand (wet-ink signature), then scan or photograph it and convert it to PDF.',
-          'Save it as: <code>CLiMeM_XXX_LTP.pdf</code> (e.g., <code>CLiMeM_013_LTP.pdf</code>).'
+          '<span class="camera-ready-new">NEW</span> Save it as: <code>CLiMeM_XXX_LTP.pdf</code> (e.g., <code>CLiMeM_013_LTP.pdf</code>).'
         ]
       },
       {
@@ -433,7 +433,7 @@ export const workshop: Workshop = {
           'Upload your camera-ready PDF in the paper file field.',
           'Upload your signed License to Publish form (PDF) in the designated field.',
           'Click <strong>Submit</strong>.',
-          '<strong>Note:</strong> your original submission plus the reviews and your responses to reviewers will remain publicly visible on OpenReview — only the camera-ready file itself stays hidden.'
+          '<span class="camera-ready-new">NEW</span> <strong>Note:</strong> your original submission plus the reviews and your responses to reviewers will remain publicly visible on OpenReview — only the camera-ready file itself stays hidden.'
         ]
       },
       {
@@ -443,15 +443,15 @@ export const workshop: Workshop = {
         ]
       },
       {
-        title: '5. Patent notice',
+        title: '<span class="camera-ready-new">NEW</span> 5. Patent notice',
         items: [
           'An open-access version of all accepted CLiMeM papers will be made available on the MICCAI Society website no earlier than one week before the first day of the conference. If you intend to file a patent based on this work, please ensure all necessary filings are completed before that date.'
         ]
       },
       {
-        title: '6. Springer Code of Conduct',
+        title: '<span class="camera-ready-new">NEW</span> 6. Springer Code of Conduct',
         items: [
-          'Please review <a href="https://www.springernature.com/gp/authors/book-authors/code-of-conduct" target="_blank" rel="noopener">Springer Nature\'s Code of Conduct for Book Authors</a>, particularly the sections on <strong>Figures and Illustrations</strong> and <strong>Ethical Approval and Informed Consent</strong>, given CLiMeM\'s subject matter.'
+          'Please review <a href="https://www.springernature.com/gp/authors/book-authors-code-of-conduct" target="_blank" rel="noopener">Springer Nature\'s Code of Conduct for Book Authors</a>, particularly the sections on <strong>Figures and Illustrations</strong> and <strong>Ethical Approval and Informed Consent</strong>, given CLiMeM\'s subject matter.'
         ]
       }
     ],

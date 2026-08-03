@@ -1016,6 +1016,20 @@ main {
   border-radius: 0.25rem;
 }
 
+.camera-ready-new {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.1rem 0.4rem;
+  color: #fff;
+  background: #dc2626;
+  border-radius: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
 .camera-ready-closing {
   margin-top: 2rem;
   color: var(--gray-700);
