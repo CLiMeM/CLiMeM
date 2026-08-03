@@ -38,11 +38,6 @@
 
       <div id="cr-steps"></div>
 
-      <section class="section camera-ready-registration guidelines-section" aria-labelledby="cr-registration-title">
-        <h2 class="section-title" id="cr-registration-title"></h2>
-        <p class="guidelines-para" id="cr-registration-note"></p>
-      </section>
-
       <p class="camera-ready-closing" id="cr-closing"></p>
     </div>
   </main>
@@ -98,12 +93,6 @@
           return '<section class="section guidelines-section camera-ready-step"><h2 class="section-title">' + (step.title || '') + '</h2><ul class="camera-ready-step-list">' + items + '</ul></section>';
         }).join('');
       }
-
-      var regTitle = document.getElementById('cr-registration-title');
-      if (regTitle) regTitle.textContent = cr.registrationTitle || 'Registration reminder';
-
-      var regNote = document.getElementById('cr-registration-note');
-      if (regNote) regNote.textContent = cr.registrationNote || '';
 
       var closing = document.getElementById('cr-closing');
       if (closing && cr.closing) {
