@@ -65,6 +65,7 @@
       { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg Convention Center, Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
     ],
     news: [
+      { title: 'Workshop program published', date: '2026-08-14', blurb: 'The full CLiMeM program is now available: oral presentations and invited talks on Sunday, September 27, 2026 (8:00–12:30), room Bruxelles (G). See the <a href="workshop-program.html">Workshop Program</a> page.', pinned: true },
       { title: 'Decisions are out!', date: '2026-07-31', blurb: 'Thank you to all submitted papers and congratulations to all the accepted ones!', pinned: true },
       { title: 'Workshop schedule: Sept 27, Bruxelles (G)', date: '2026-07-15', blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.', pinned: true },
       { title: 'Submission deadline extended to July 16, 2026', date: '2026-07-09', blurb: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">OpenReview</a>. See <a href="call-for-paper.html#cfp-dates-title">Important Dates</a>.', pinned: true },
@@ -77,16 +78,22 @@
       { title: 'Workshop accepted', date: '2026-02-07', blurb: 'CLiMeM workshop accepted at MICCAI 2026.', pinned: false }
     ],
     tentativeSchedule: [
-      { time: '09:00 – 09:15', title: 'Opening & welcome', type: 'session' },
-      { time: '09:15 – 10:00', title: 'Invited talk 1', speaker: 'Xiaoxiao Li', type: 'invited' },
-      { time: '10:00 – 10:30', title: 'Coffee break', type: 'break' },
-      { time: '10:30 – 11:15', title: 'Contributed papers session 1', type: 'session' },
-      { time: '11:15 – 12:00', title: 'Invited talk 2', speaker: 'Anirban Mukhopadhyay', type: 'invited' },
-      { time: '12:00 – 12:30', title: 'Contributed papers session 2', type: 'session' },
-      { time: '12:30 – 13:00', title: 'Awards & closing', type: 'session' }
+      { time: '8:00 – 8:05', title: 'Opening', duration: '5 min', type: 'opening' },
+      { time: '8:05 – 8:20', title: 'Oral 1: Investigating Test-Time Adaptation of Convolutional Neural Networks for Medical Image Analysis under Distribution Shifts', duration: '15 min', type: 'session' },
+      { time: '8:20 – 8:35', title: 'Oral 2: Continual Merging with Test-Time Adaptation for Whole-Slide Image Analysis', duration: '15 min', type: 'session' },
+      { time: '8:35 – 8:45', title: 'Short break', duration: '10 min', type: 'break' },
+      { time: '8:45 – 9:30', title: 'Invited Talk 1 (incl. Q&A)', speaker: 'Xiaoxiao Li', duration: '45 min', type: 'invited' },
+      { time: '9:30 – 9:45', title: 'Oral 3: Integrating Uncertainty and Latent Feature Diversity for Robust Memory Replay in Continual Medical Imaging Learning', duration: '15 min', type: 'session' },
+      { time: '9:45 – 9:55', title: 'Short break', duration: '10 min', type: 'break' },
+      { time: '9:55 – 10:10', title: 'Oral 4: An Empirical Analysis of Continual Learning for Heterogeneous Medical Visual Question Answering', duration: '15 min', type: 'session' },
+      { time: '10:10 – 10:25', title: 'Oral 5: Multimodal Fusion for Domain-Incremental Continual Learning in 3D Medical Imaging', duration: '15 min', type: 'session' },
+      { time: '10:25 – 10:40', title: 'Oral 6: How Resilient are Foundation Segmentation Models to Noisy Ultrasound Artifacts? A Multi-Dataset Benchmark Across Prompts, Noise Types, and Severity Levels', duration: '15 min', type: 'session' },
+      { time: '10:40 – 11:30', title: 'Lunch break', duration: '50 min', type: 'break' },
+      { time: '11:30 – 12:15', title: 'Invited Talk 2 (incl. Q&A)', speaker: 'Anirban Mukhopadhyay', duration: '45 min', type: 'invited' },
+      { time: '12:15 – 12:30', title: 'Oral 7: Learning to Reason Over Physician Corrections: An Interactive Agentic Framework for 3D Tumor Segmentation', duration: '15 min', type: 'session' }
     ],
-    programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Bruxelles (G)</strong>, Strasbourg Convention Center, Strasbourg, France. Invited speakers are confirmed; detailed session timing will be announced closer to the workshop. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a> for the official MICCAI satellite program.',
-    programTimezone: 'All times local (MICCAI 2026).',
+    programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Bruxelles (G)</strong>, Strasbourg Convention Center, Strasbourg, France. The full session schedule is below. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a> for the official MICCAI satellite program.',
+    programTimezone: 'All times local (MICCAI 2026, Strasbourg).',
     invitedSpeakers: [
       {
         name: 'Xiaoxiao Li',

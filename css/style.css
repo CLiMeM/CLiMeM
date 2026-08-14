@@ -547,6 +547,94 @@ main {
   color: var(--gray-500);
 }
 
+.program-timezone {
+  margin: -0.5rem 0 1.5rem;
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+.schedule-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-200, #e5e7eb);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--gray-200, #e5e7eb);
+  vertical-align: middle;
+}
+
+.schedule-table thead th {
+  background: #1e3a5f;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+}
+
+.schedule-table th:first-child,
+.schedule-table th:last-child,
+.schedule-table .schedule-time,
+.schedule-table .schedule-duration {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.schedule-table .schedule-time {
+  font-weight: 600;
+  width: 8.5rem;
+}
+
+.schedule-table .schedule-duration {
+  width: 5.5rem;
+  color: var(--gray-700);
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.schedule-row.schedule-opening {
+  background: #eef2f7;
+}
+
+.schedule-row.schedule-break {
+  background: #e8f5e9;
+}
+
+.schedule-row.schedule-invited {
+  background: #ffe8d6;
+}
+
+.schedule-row.schedule-invited .schedule-item {
+  font-weight: 700;
+}
+
+.schedule-row.schedule-session {
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  .schedule-table th,
+  .schedule-table td {
+    padding: 0.6rem 0.65rem;
+    font-size: 0.88rem;
+  }
+
+  .schedule-table .schedule-time {
+    width: auto;
+    white-space: normal;
+  }
+}
+
 /* Invited speakers */
 .invited-speakers-list {
   list-style: none;

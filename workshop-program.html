@@ -28,6 +28,24 @@
     <div class="container">
       <h1 class="page-title" id="program-heading"></h1>
       <p class="page-lead" id="program-intro">Program details will be announced soon.</p>
+      <p class="program-timezone" id="program-timezone"></p>
+
+      <section class="section" aria-labelledby="schedule-title">
+        <h2 class="section-title" id="schedule-title">Program Schedule</h2>
+        <div class="schedule-table-wrap">
+          <table class="schedule-table" id="schedule-table">
+            <thead>
+              <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Item</th>
+                <th scope="col">Duration</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-body"></tbody>
+          </table>
+        </div>
+      </section>
+
       <h2 class="section-title" id="invited-speakers-title">Invited Speakers</h2>
       <ul class="invited-speakers-list" id="invited-speakers-list"></ul>
     </div>
@@ -49,6 +67,26 @@
       document.title = (w.workshopName || '') + ' ' + (w.year || '') + ' — Workshop Program';
       var heading = document.getElementById('program-heading'); if (heading) heading.textContent = 'Workshop Program';
       var intro = document.getElementById('program-intro'); if (intro) intro.innerHTML = w.programIntro || 'Program details will be announced soon.';
+      var tz = document.getElementById('program-timezone');
+      if (tz) tz.textContent = w.programTimezone || '';
+
+      var scheduleBody = document.getElementById('schedule-body');
+      var schedule = w.tentativeSchedule || [];
+      if (scheduleBody && schedule.length) {
+        scheduleBody.innerHTML = schedule.map(function (row) {
+          var type = row.type || 'session';
+          var title = row.title || '';
+          if (row.speaker && type === 'invited') {
+            title += ' — ' + row.speaker;
+          }
+          return '<tr class="schedule-row schedule-' + type + '">' +
+            '<td class="schedule-time">' + (row.time || '') + '</td>' +
+            '<td class="schedule-item">' + title + '</td>' +
+            '<td class="schedule-duration">' + (row.duration || '') + '</td>' +
+            '</tr>';
+        }).join('');
+      }
+
       var speakersTitle = document.getElementById('invited-speakers-title'); if (speakersTitle) speakersTitle.textContent = 'Invited Speakers';
       var speakerList = document.getElementById('invited-speakers-list');
       var speakers = w.invitedSpeakers || [];
