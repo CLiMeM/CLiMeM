@@ -93,7 +93,7 @@
             title += ' — ' + row.speaker;
           }
           var itemHtml = row.url
-            ? '<a class="schedule-paper-link" href="' + row.url + '" target="_blank" rel="noopener">' + title + '</a>'
+            ? '<a class="schedule-paper-link" href="' + row.url + '" target="_blank" rel="noopener">' + title + ' <span class="schedule-or-badge">OpenReview</span></a>'
             : title;
           return '<tr class="schedule-row schedule-' + type + '">' +
             '<td class="schedule-time">' + (row.time || '') + '</td>' +

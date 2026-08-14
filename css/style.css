@@ -673,15 +673,33 @@ main {
 
 .schedule-paper-link {
   color: var(--purple-700);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
   font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: color var(--transition), border-color var(--transition);
+  transition: color var(--transition);
 }
 
 .schedule-paper-link:hover {
   color: var(--purple-900);
-  border-bottom-color: var(--purple-400);
+}
+
+.schedule-or-badge {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.25rem;
+  background: var(--purple-100);
+  color: var(--purple-800);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.schedule-paper-link:hover .schedule-or-badge {
+  background: var(--purple-200);
 }
 
 .schedule-table .schedule-duration {
