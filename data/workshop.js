@@ -67,7 +67,7 @@
     news: [
       { title: 'Workshop program published', date: '2026-08-14', blurb: 'The full CLiMeM program is now available: oral presentations and invited talks on Sunday, September 27, 2026 (8:00–12:30), room Londrezs 1 (G). See the <a href="workshop-program.html">Workshop Program</a> page.', pinned: true },
       { title: 'Decisions are out!', date: '2026-07-31', blurb: 'Thank you to all submitted papers and congratulations to all the accepted ones!', pinned: true },
-      { title: 'Workshop schedule: Sept 27, Londrezs 1 (G)', date: '2026-07-15', blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.', pinned: true },
+      { title: 'Workshop schedule: Sept 27, Londrezs 1 (G)', date: '2026-07-15', blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events - Schedule (PDF)</a>.', pinned: true },
       { title: 'Submission deadline extended to July 16, 2026', date: '2026-07-09', blurb: 'The paper submission deadline has been extended to July 16th, 2026 (23:59 PDT). Submit via <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">OpenReview</a>. See <a href="call-for-paper.html#cfp-dates-title">Important Dates</a>.', pinned: true },
       { title: 'Workshop date: Sunday, September 27, 2026', date: '2026-05-13', blurb: 'CLiMeM will take place on Sunday, September 27, 2026, the first day of MICCAI 2026 in Strasbourg, France (conference: Sept. 27–Oct. 1, 2026).', pinned: true },
       { title: 'Submission Portal Open', date: '2026-04-28', blurb: 'Paper submissions are now open via OpenReview. <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CLiMeM#tab-active-submissions" target="_blank" rel="noopener">Submit your paper &rarr;</a>', pinned: true },
@@ -192,13 +192,13 @@
       description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, at Strasbourg Convention Center, Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Londrezs 1 (G). Registration follows the main conference program.',
       linkLabel: 'MICCAI 2026 website',
       linkHref: 'https://conferences.miccai.org/2026/en/default.asp',
-      scheduleLinkLabel: 'MICCAI 2026 Satellite Events — Tentative Schedule (PDF)',
+      scheduleLinkLabel: 'MICCAI 2026 Satellite Events - Schedule (PDF)',
       scheduleLinkHref: 'https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf'
     },
     proceedingsPageIntro: 'All proceedings will be listed below. This is the first edition of CLiMeM; once the workshop has taken place, accepted papers will appear here.',
     galleryPlaceholderLabel: 'CLiMeM | MICCAI 2026',
     faq: [
-      { q: 'What is the workshop format?', a: 'Half-day workshop on Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), with invited talks and contributed paper sessions. See the MICCAI 2026 Satellite Events tentative schedule (PDF) on the Venue or Workshop Program page.' },
+      { q: 'What is the workshop format?', a: 'Half-day workshop on Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), with invited talks and contributed paper sessions. See the MICCAI 2026 Satellite Events schedule (PDF) on the Venue or Workshop Program page.' },
       { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
       { q: 'Will workshop papers be published?', a: 'Yes. Accepted papers will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS), in the same series as other MICCAI satellite events.' },
       { q: 'Can I submit work also submitted elsewhere?', a: 'No. Submissions must be original. No paper of substantially similar content should be under peer review or have been accepted for publication elsewhere (conference or journal). Dual submission policies follow MICCAI guidelines.' },

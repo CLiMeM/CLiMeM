@@ -274,7 +274,7 @@ export const workshop: Workshop = {
     {
       title: 'Workshop schedule: Sept 27, Londrezs 1 (G)',
       date: '2026-07-15',
-      blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.',
+      blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events - Schedule (PDF)</a>.',
       pinned: true
     },
     {
@@ -542,13 +542,13 @@ export const workshop: Workshop = {
     description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, at Strasbourg Convention Center, Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Londrezs 1 (G). Registration follows the main conference program.',
     linkLabel: 'MICCAI 2026 website',
     linkHref: 'https://conferences.miccai.org/2026/en/default.asp',
-    scheduleLinkLabel: 'MICCAI 2026 Satellite Events — Tentative Schedule (PDF)',
+    scheduleLinkLabel: 'MICCAI 2026 Satellite Events - Schedule (PDF)',
     scheduleLinkHref: 'https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf'
   },
   proceedingsPageIntro: 'All proceedings will be listed below. This is the first edition of CLiMeM; once the workshop has taken place, accepted papers will appear here.',
   galleryPlaceholderLabel: 'CLiMeM | MICCAI 2026',
   faq: [
-    { q: 'What is the workshop format?', a: 'Half-day workshop on Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), with invited talks and contributed paper sessions. See the MICCAI 2026 Satellite Events tentative schedule (PDF) on the Venue or Workshop Program page.' },
+    { q: 'What is the workshop format?', a: 'Half-day workshop on Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), with invited talks and contributed paper sessions. See the MICCAI 2026 Satellite Events schedule (PDF) on the Venue or Workshop Program page.' },
     { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
     { q: 'Will workshop papers be published?', a: 'Yes. Accepted papers will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS), in the same series as other MICCAI satellite events.' },
     { q: 'Can I submit work also submitted elsewhere?', a: 'No. Submissions must be original. No paper of substantially similar content should be under peer review or have been accepted for publication elsewhere (conference or journal). Dual submission policies follow MICCAI guidelines.' },
