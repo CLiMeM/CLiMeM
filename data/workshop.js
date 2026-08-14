@@ -92,7 +92,7 @@
       { time: '11:30 – 12:15', title: 'Invited Talk 2 (incl. Q&A)', speaker: 'Anirban Mukhopadhyay', duration: '45 min', type: 'invited' },
       { time: '12:15 – 12:30', title: 'Oral 7: Learning to Reason Over Physician Corrections: An Interactive Agentic Framework for 3D Tumor Segmentation', duration: '15 min', type: 'session' }
     ],
-    programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Bruxelles (G)</strong>, Strasbourg Convention Center, Strasbourg, France. The full session schedule is below. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a> for the official MICCAI satellite program.',
+    programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Bruxelles (G)</strong>, Strasbourg Convention Center, Strasbourg, France. The full session schedule is below.',
     programTimezone: 'All times local (MICCAI 2026, Strasbourg).',
     invitedSpeakers: [
       {
