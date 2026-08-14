@@ -92,9 +92,12 @@
           if (row.speaker && type === 'invited') {
             title += ' — ' + row.speaker;
           }
+          var itemHtml = row.url
+            ? '<a class="schedule-paper-link" href="' + row.url + '" target="_blank" rel="noopener">' + title + '</a>'
+            : title;
           return '<tr class="schedule-row schedule-' + type + '">' +
             '<td class="schedule-time">' + (row.time || '') + '</td>' +
-            '<td class="schedule-item">' + title + '</td>' +
+            '<td class="schedule-item">' + itemHtml + '</td>' +
             '<td class="schedule-duration">' + (row.duration || '') + '</td>' +
             '</tr>';
         }).join('');
