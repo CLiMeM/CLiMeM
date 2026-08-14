@@ -548,9 +548,63 @@ main {
 }
 
 .program-timezone {
-  margin: -0.25rem 0 1.75rem;
+  margin: -0.25rem 0 1.25rem;
   color: var(--gray-500);
   font-size: 0.9rem;
+}
+
+.program-jump {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 2.25rem;
+}
+
+.program-jump-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--purple-200);
+  border-radius: 0.75rem;
+  background: var(--purple-50);
+  color: var(--purple-800);
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.program-jump-box:hover {
+  background: var(--white);
+  border-color: var(--purple-400);
+  color: var(--purple-900);
+  box-shadow: 0 4px 14px rgba(109, 40, 217, 0.12);
+  transform: translateY(-1px);
+}
+
+.program-jump-label {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.program-jump-hint {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  font-weight: 400;
+}
+
+.program-jump-box:hover .program-jump-hint {
+  color: var(--gray-700);
+}
+
+@media (max-width: 640px) {
+  .program-jump {
+    grid-template-columns: 1fr;
+  }
+}
+
+#schedule-section,
+#invited-speakers-section {
+  scroll-margin-top: 5.5rem;
 }
 
 .schedule-table-wrap {

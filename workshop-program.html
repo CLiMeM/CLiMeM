@@ -30,7 +30,18 @@
       <p class="page-lead" id="program-intro">Program details will be announced soon.</p>
       <p class="program-timezone" id="program-timezone"></p>
 
-      <section class="section" aria-labelledby="schedule-title">
+      <nav class="program-jump" aria-label="Program sections">
+        <a class="program-jump-box" href="#schedule-section">
+          <span class="program-jump-label">Program Schedule</span>
+          <span class="program-jump-hint">Full session timetable</span>
+        </a>
+        <a class="program-jump-box" href="#invited-speakers-section">
+          <span class="program-jump-label">Invited Speakers</span>
+          <span class="program-jump-hint">Bios and affiliations</span>
+        </a>
+      </nav>
+
+      <section class="section" id="schedule-section" aria-labelledby="schedule-title">
         <h2 class="section-title" id="schedule-title">Program Schedule</h2>
         <div class="schedule-table-wrap">
           <table class="schedule-table" id="schedule-table">
@@ -46,8 +57,10 @@
         </div>
       </section>
 
-      <h2 class="section-title" id="invited-speakers-title">Invited Speakers</h2>
-      <ul class="invited-speakers-list" id="invited-speakers-list"></ul>
+      <section class="section" id="invited-speakers-section" aria-labelledby="invited-speakers-title">
+        <h2 class="section-title" id="invited-speakers-title">Invited Speakers</h2>
+        <ul class="invited-speakers-list" id="invited-speakers-list"></ul>
+      </section>
     </div>
   </main>
 
