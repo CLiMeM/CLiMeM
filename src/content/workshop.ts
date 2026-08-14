@@ -253,14 +253,14 @@ export const workshop: Workshop = {
     { label: 'Paper Submission Deadline', date: 'July 16th, 2026 (23:59 PDT)', status: 'announced' },
     { label: 'Author Notification', date: 'August 1st, 2026', status: 'announced' },
     { label: 'Camera-ready Submission Deadline', date: 'August 6th, 2026 (23:59 PDT)', status: 'announced' },
-    { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026 · 8:00 AM–12:30 PM · Bruxelles (G)', status: 'announced' },
+    { label: 'CLiMeM workshop day', date: 'Sunday, September 27, 2026 · 8:00 AM–12:30 PM · Londrezs 1 (G)', status: 'announced' },
     { label: 'MICCAI 2026 Conference (France)', date: 'Strasbourg Convention Center, Strasbourg, France - Sept. 27- Oct. 1, 2026', status: 'announced' }
   ],
   news: [
     {
       title: 'Workshop program published',
       date: '2026-08-14',
-      blurb: 'The full CLiMeM program is now available: oral presentations and invited talks on Sunday, September 27, 2026 (8:00–12:30), room Bruxelles (G). See the <a href="workshop-program.html">Workshop Program</a> page.',
+      blurb: 'The full CLiMeM program is now available: oral presentations and invited talks on Sunday, September 27, 2026 (8:00–12:30), room Londrezs 1 (G). See the <a href="workshop-program.html">Workshop Program</a> page.',
       pinned: true
     },
     {
@@ -270,9 +270,9 @@ export const workshop: Workshop = {
       pinned: true
     },
     {
-      title: 'Workshop schedule: Sept 27, Bruxelles (G)',
+      title: 'Workshop schedule: Sept 27, Londrezs 1 (G)',
       date: '2026-07-15',
-      blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.',
+      blurb: 'CLiMeM is scheduled for Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), Strasbourg Convention Center, Strasbourg, France. See the <a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf" target="_blank" rel="noopener">MICCAI 2026 Satellite Events — Tentative Schedule (PDF)</a>.',
       pinned: true
     },
     {
@@ -309,7 +309,7 @@ export const workshop: Workshop = {
     { time: '11:30 – 12:15', title: 'Invited Talk 2 (incl. Q&A)', duration: '45 min', type: 'invited' },
     { time: '12:15 – 12:30', title: 'Oral 7: Learning to Reason Over Physician Corrections: An Interactive Agentic Framework for 3D Tumor Segmentation', duration: '15 min', type: 'session' }
   ],
-  programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Bruxelles (G)</strong>, Strasbourg Convention Center, Strasbourg, France. The full session schedule is below.',
+  programIntro: 'CLiMeM will be held on <strong>Sunday, September 27, 2026</strong>, <strong>8:00 AM–12:30 PM</strong> (local time), room <strong>Londrezs 1 (G)</strong>, Strasbourg Convention Center, Strasbourg, France. The full session schedule is below.',
   programTimezone: 'All times local (MICCAI 2026, Strasbourg).',
   invitedSpeakers: [
     {
@@ -537,7 +537,7 @@ export const workshop: Workshop = {
   },
   venue: {
     title: 'MICCAI 2026',
-    description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, at Strasbourg Convention Center, Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Bruxelles (G). Registration follows the main conference program.',
+    description: 'CLiMeM will be held on Sunday, September 27, 2026, 8:00 AM–12:30 PM, at Strasbourg Convention Center, Strasbourg, France, during MICCAI 2026 (Sept. 27–Oct. 1, 2026). Room: Londrezs 1 (G). Registration follows the main conference program.',
     linkLabel: 'MICCAI 2026 website',
     linkHref: 'https://conferences.miccai.org/2026/en/default.asp',
     scheduleLinkLabel: 'MICCAI 2026 Satellite Events — Tentative Schedule (PDF)',
@@ -546,7 +546,7 @@ export const workshop: Workshop = {
   proceedingsPageIntro: 'All proceedings will be listed below. This is the first edition of CLiMeM; once the workshop has taken place, accepted papers will appear here.',
   galleryPlaceholderLabel: 'CLiMeM | MICCAI 2026',
   faq: [
-    { q: 'What is the workshop format?', a: 'Half-day workshop on Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Bruxelles (G), with invited talks and contributed paper sessions. See the MICCAI 2026 Satellite Events tentative schedule (PDF) on the Venue or Workshop Program page.' },
+    { q: 'What is the workshop format?', a: 'Half-day workshop on Sunday, September 27, 2026, 8:00 AM–12:30 PM, room Londrezs 1 (G), with invited talks and contributed paper sessions. See the MICCAI 2026 Satellite Events tentative schedule (PDF) on the Venue or Workshop Program page.' },
     { q: 'Do I need to register for MICCAI to attend?', a: 'Yes. Workshop attendance requires registration for MICCAI 2026. Please register through the main conference website.' },
     { q: 'Will workshop papers be published?', a: 'Yes. Accepted papers will be published as part of the joint MICCAI Workshops proceedings with Springer (LNCS), in the same series as other MICCAI satellite events.' },
     { q: 'Can I submit work also submitted elsewhere?', a: 'No. Submissions must be original. No paper of substantially similar content should be under peer review or have been accepted for publication elsewhere (conference or journal). Dual submission policies follow MICCAI guidelines.' },
