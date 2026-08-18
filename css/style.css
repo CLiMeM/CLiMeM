@@ -734,30 +734,22 @@ main {
   color: var(--purple-800);
 }
 
-.schedule-row.schedule-break td {
-  background: #f3fbf5;
-  box-shadow: inset 0 0 18px rgba(34, 197, 94, 0.18), 0 6px 16px rgba(34, 197, 94, 0.12);
+.schedule-row.schedule-break {
+  background: #ecf8ef;
 }
 
-.schedule-row.schedule-break .schedule-item,
-.schedule-row.schedule-break .schedule-time,
-.schedule-row.schedule-break .schedule-duration {
+.schedule-row.schedule-break .schedule-item {
+  font-weight: 600;
   color: #166534;
-  font-weight: 500;
 }
 
-.schedule-row.schedule-invited td {
-  background: #fff8f1;
-  box-shadow: inset 0 0 18px rgba(249, 115, 22, 0.16), 0 6px 16px rgba(234, 88, 12, 0.12);
+.schedule-row.schedule-invited {
+  background: #fff4e8;
 }
 
 .schedule-row.schedule-invited .schedule-item {
-  font-weight: 700;
+  font-weight: 600;
   color: #9a3412;
-}
-
-.schedule-row.schedule-invited .schedule-time {
-  color: #c2410c;
 }
 
 .schedule-row.schedule-session {
