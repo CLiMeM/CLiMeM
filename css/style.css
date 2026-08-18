@@ -734,8 +734,9 @@ main {
   color: var(--purple-800);
 }
 
-.schedule-row.schedule-break {
-  background: #f0fdf4;
+.schedule-row.schedule-break td {
+  background: #f3fbf5;
+  box-shadow: inset 0 0 18px rgba(34, 197, 94, 0.18), 0 6px 16px rgba(34, 197, 94, 0.12);
 }
 
 .schedule-row.schedule-break .schedule-item,
@@ -745,8 +746,9 @@ main {
   font-weight: 500;
 }
 
-.schedule-row.schedule-invited {
-  background: #fff7ed;
+.schedule-row.schedule-invited td {
+  background: #fff8f1;
+  box-shadow: inset 0 0 18px rgba(249, 115, 22, 0.16), 0 6px 16px rgba(234, 88, 12, 0.12);
 }
 
 .schedule-row.schedule-invited .schedule-item {
