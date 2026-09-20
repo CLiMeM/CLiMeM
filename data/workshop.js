@@ -52,7 +52,7 @@
         { name: 'Abhinav K. Jha, PhD', title: '', affiliation: 'Associate Professor of Biomedical Imaging and of Radiology, Washington University in St. Louis (USA)', country: 'USA', photo: 'Abhinav_K.png', website: 'https://www.linkedin.com/in/abhinav-jha-1a37b96/' },
         { name: 'Arman Rahmim, PhD, DABSNM', title: '', affiliation: 'Professor of Radiology, Physics, and Biomedical Engineering, UBC & BC Cancer (Canada)', country: 'Canada', photo: 'Arman_Rahmim.jpg', website: 'https://www.linkedin.com/in/rahmim/?originalSubdomain=ca' }
       ] },
-      { title: 'Graduate Students', organizers: [
+      { title: 'Logistics', organizers: [
         { name: 'Monica Luo', title: '', affiliation: 'MD/PhD Candidate at UBC', country: 'Canada', photo: 'monica.png' },
         { name: 'Reza Hamidpour, MSc', title: '', affiliation: 'PhD Student at UBC', country: 'Canada', photo: 'reza.jpg' }
       ] }

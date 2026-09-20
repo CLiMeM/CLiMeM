@@ -853,7 +853,7 @@ main {
   margin-top: 1rem;
 }
 
-/* Graduate Students: 2 columns */
+/* Logistics: 2 columns */
 .organizers-group.organizers-grid-2 .organizers-cards {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 1rem;

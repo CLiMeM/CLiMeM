@@ -56,7 +56,7 @@
           var title = (grp.title || '').toLowerCase();
           var gridClass = 'organizers-grid-3';
           if (title.indexOf('translational') !== -1) gridClass = 'organizers-grid-5';
-          if (title.indexOf('graduate') !== -1) gridClass = 'organizers-grid-2';
+          if (title.indexOf('logistics') !== -1) gridClass = 'organizers-grid-2';
           var items = (grp.organizers || []).map(function (o) {
             var aff = o.affiliation || '';
             var namePart = o.website ? '<a href="' + o.website + '" target="_blank" rel="noopener">' + (o.name || '') + '</a>' : (o.name || '');

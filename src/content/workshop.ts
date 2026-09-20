@@ -245,7 +245,7 @@ export const workshop: Workshop = {
       ]
     },
     {
-      title: 'Graduate Students',
+      title: 'Logistics',
       organizers: [
         { name: 'Monica Luo', title: '', affiliation: 'MD/PhD Candidate at UBC', country: 'Canada', photo: 'monica.png' },
         { name: 'Reza Hamidpour, MSc', title: '', affiliation: 'PhD Student at UBC', country: 'Canada', photo: 'reza.jpg' }
